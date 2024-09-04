@@ -1,0 +1,7 @@
+main: me.hcfalerts.practice.HCFPractice
+name: HCFPractice
+version: ${project.version}
+authors: [HCFAlerts]
+depend:
+  - PlaceholderAPI
+  - HolographicDisplays

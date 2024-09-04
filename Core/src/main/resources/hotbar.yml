@@ -1,0 +1,201 @@
+HOTBAR_ITEMS:
+  QUEUES_MENU:
+    ENABLED: false
+    SLOT: 1
+    MATERIAL: GOLD_SWORD
+    DURABILITY: 0
+    NAME: '&d&lQueues &7(Right-Click)'
+    LORE: []
+  QUEUE_JOIN_UNRANKED:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: IRON_SWORD
+    DURABILITY: 0
+    NAME: '&d&lUnranked Queue &7(Right-Click)'
+    LORE: []
+  QUEUE_JOIN_RANKED:
+    ENABLED: true
+    SLOT: 2
+    MATERIAL: DIAMOND_SWORD
+    DURABILITY: 0
+    NAME: '&d&lRanked Queue &7(Right-Click)'
+    LORE: []
+  QUEUE_LEAVE:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    NAME: '&c&lLeave Queue &7(Right-Click)'
+    LORE: []
+  PARTY_EVENTS:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: DIAMOND_SWORD
+    DURABILITY: 0
+    NAME: '&d&lParty Events &7(Right-Click)'
+    LORE: []
+  PARTY_CREATE:
+    ENABLED: true
+    SLOT: 5
+    MATERIAL: NAME_TAG
+    DURABILITY: 0
+    NAME: '&d&lCreate Party &7(Right-Click)'
+    LORE: []
+  PARTY_DISBAND:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    NAME: '&c&lDisband Party &7(Right-Click)'
+    LORE: []
+  PARTY_LEAVE:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    NAME: '&c&lLeave Party &7(Right-Click)'
+    LORE: []
+  PARTY_INFORMATION:
+    ENABLED: true
+    SLOT: 8
+    MATERIAL: SKULL_ITEM
+    DURABILITY: 0
+    NAME: '&d&lParty Information &7(Right-Click)'
+    LORE: []
+  CLASS_SELECT:
+    ENABLED: true
+    SLOT: 2
+    MATERIAL: BOOK
+    DURABILITY: 0
+    NAME: '&d&lHCF Roster &7(Right-Click)'
+    LORE: []
+  OTHER_PARTIES:
+    ENABLED: true
+    SLOT: 5
+    MATERIAL: NETHER_STAR
+    DURABILITY: 0
+    NAME: '&d&lOther Parties &7(Right-Click)'
+    LORE: []
+  KIT_EDITOR:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: BOOK
+    DURABILITY: 0
+    NAME: '&d&lKit Editor &7(Right-Click)'
+    LORE: []
+  SPECTATE_STOP:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    NAME: '&c&lStop Spectating &7(Right-Click)'
+    LORE: []
+  VIEW_INVENTORY:
+    ENABLED: true
+    SLOT: 0
+    MATERIAL: BOOK
+    DURABILITY: 0
+    NAME: '&d&lView Inventory &7(Right-Click)'
+    LORE: []
+  EVENT_JOIN:
+    ENABLED: true
+    SLOT: 8
+    MATERIAL: NETHER_STAR
+    DURABILITY: 0
+    NAME: '&d&lJoin Event &7(Right-Click)'
+    LORE: []
+  EVENT_LEAVE:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: NETHER_STAR
+    DURABILITY: 0
+    NAME: '&c&lLeave Event &7(Right-Click)'
+    LORE: []
+  MAP_SELECTION:
+    ENABLED: true
+    MATERIAL: MAP
+    DURABILITY: 0
+    NAME: '&7» &d&l%MAP% &7«'
+    LORE: []
+  REMATCH_REQUEST:
+    SLOT: 3
+    MATERIAL: BLAZE_POWDER
+    DURABILITY: 0
+    NAME: '&d&lRequest Rematch &7(Right-Click)'
+    LORE: []
+  REMATCH_ACCEPT:
+    ENABLED: true
+    SLOT: 3
+    MATERIAL: DIAMOND
+    DURABILITY: 0
+    NAME: '&d&lAccept Rematch &7(Right-Click)'
+    LORE: []
+  KIT_SELECTION:
+    ENABLED: true
+    MATERIAL: ENCHANTED_BOOK
+    DURABILITY: 0
+    NAME: '&7» &6&l%KIT% &7«'
+    LORE: []
+  EVENT_SELECT:
+    ENABLED: true
+    SLOT: 8
+    MATERIAL: LEASH
+    DURABILITY: 0
+    NAME: '&d&lHost Event &7(Right-Click)'
+    LORE: []
+  LEADERBOARD_MENU:
+    ENABLED: true
+    SLOT: 7
+    MATERIAL: EMERALD
+    DURABILITY: 0
+    NAME: '&d&lLeaderboard &7(Right-Click)'
+    LORE: []
+  RANDOM_TELEPORT:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: BLAZE_ROD
+    DURABILITY: 0
+    NAME: '&d&lRandom Teleport &7(Right-Click)'
+    LORE: []
+  HIDE_ALL_PLAYERS:
+    ENABLED: true
+    SLOT: 5
+    MATERIAL: NAME_TAG
+    DURABILITY: 0
+    NAME: '&d&lHide Players &7(Right-Click)'
+    LORE: []
+  RESET:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: EMERALD
+    DURABILITY: 0
+    NAME: '&c&lReset &7(Right-Click)'
+    LORE: []
+  FOLLOW:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: REDSTONE
+    DURABILITY: 0
+    NAME: '&c&lStop Follow &7(Right-Click)'
+    LORE: []
+  PARKOUR_HIDE_PLAYERS:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: MINECART
+    DURABILITY: 0
+    NAME: '&d&lHide Players &7(Right-Click)'
+    LORE: []
+  PARKOUR_LAST_CHECKPOINT:
+    ENABLED: true
+    SLOT: 5
+    MATERIAL: ANVIL
+    DURABILITY: 0
+    NAME: '&d&lLast Checkpoint &7(Right-Click)'
+    LORE: []
+  PARKOUR_RESET:
+    ENABLED: true
+    SLOT: 9
+    MATERIAL: BED
+    DURABILITY: 0
+    NAME: '&c&lReset &7(Right-Click)'
+    LORE: []

@@ -1,0 +1,6 @@
+#In this section you must add all the existing ranges on your server,
+#if you forget one when that person enters you will not stop skipping errors.
+groups:
+  Owner: '&4'
+  Co-Owner: '&4'
+  Default: '&a'

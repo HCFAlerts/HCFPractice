@@ -1,0 +1,45 @@
+WEBHOOK: "" # Discord webhook URL, If you don't need to use this just leave it blank
+TOURNAMENT:
+  USERNAME: "Tournament"
+  CONTENT: "content" # Use this variables {kit}, {size}, {limit} and {type}
+  TTS: true
+  AVATAR_URL: "https://i.imgur.com/YQQbw.png"
+  EMBED:
+    TITLE: "title"
+    COLOR: "GREEN"
+    DESCRIPTION: "test" # Use this variables {kit}, {size}, {limit} and {type}
+    URL: "https://google.com"
+    IMAGE: "https://i.imgur.com/w3duR07.png"
+    THUMBNAIL: "https://i.imgur.com/w3duR07.png"
+    FOOTER:
+      TEXT: "footer"
+      ICON_URL: "https://i.imgur.com/w3duR07.png"
+    AUTHOR:
+      NAME: "author"
+      URL: "https://google.com"
+      ICON_URL: "https://i.imgur.com/w3duR07.png"
+    FIELDS: # Use this format: "name:value:boolean" =D, and use this variables {kit}, {size}, {limit} and {type}
+      - "name:value:true"
+      - "name2:value2:true"
+EVENTS:
+  USERNAME: "Tournament"
+  CONTENT: "content" # Use this variables {type}, {slots} and {hoster}
+  TTS: true
+  AVATAR_URL: "https://i.imgur.com/YQQbw.png"
+  EMBED:
+    TITLE: "title"
+    COLOR: "GREEN"
+    DESCRIPTION: "test" # Use this variables {type}, {slots} and {hoster}
+    URL: "https://google.com"
+    IMAGE: "https://i.imgur.com/w3duR07.png"
+    THUMBNAIL: "https://i.imgur.com/w3duR07.png"
+    FOOTER:
+      TEXT: "footer"
+      ICON_URL: "https://i.imgur.com/w3duR07.png"
+    AUTHOR:
+      NAME: "author"
+      URL: "https://google.com"
+      ICON_URL: "https://i.imgur.com/w3duR07.png"
+    FIELDS: # Use this format: "name:value:boolean" =D, and use this variables {type}, {slots} and {hoster}
+      - "name:value:true"
+      - "name2:value2:true"

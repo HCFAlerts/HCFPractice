@@ -1,0 +1,364 @@
+# Remember that from now on you can convert most messages between lists or a single message line
+# Here I will leave you the 2 types, so you can determine which one to use, you will already know what it will be for
+# EXAMPLE_MESSAGE: 'example message'
+# EXAMPLE_MESSAGE:
+# - 'example'
+# - 'message'
+COMMON_ERRORS:
+  PLAYER_NOT_FOUND: '&cA player with that name could not be found.'
+
+ESSENTIALS:
+  FLY_ACTIVATE: '&aFly mode activated.'
+  FLY_DEACTIVATE: '&cFly mode deactivated.'
+  CANNOT_FLY: '&cYou cannot fly right now.'
+
+CONVERSATION:
+  SEND_MESSAGE: '&7(To &r{target_color}{target_name}&7) {msg}'
+  RECEIVE_MESSAGE: '&7(From &r{sender_color}{sender_name}&7) {msg}'
+
+JOIN_MESSAGES:
+  - '  '
+  - ' &7[&a+&7] &fWelcome to &d&lPractice &7[Season 1]'
+  - ' &7[&a+&7] &fFor more information visit&7: &fdiscord.spacehcf.us'
+  - '  '
+
+ARENA:
+  REACHED_MAXIMUM: '&cYou have reached the maximum build height.'
+  BUILD_OUTSIDE: '&cYou cannot build outside of the arena!'
+
+KIT_EDITOR:
+  START_RENAMING: '&dNow renaming &f{kit_name} &d... Enter the new name now. &7&o(Chat
+    colors work)'
+  RENAMED: '&dYou have renamed your &f{previous_name} &dkit to &f{new_name}&d.'
+  NAME_TOO_LONG: '&cYour kit name cannot be more than 16 characters long.'
+
+PARTY:
+  HELP:
+    - '&7&m------------------------------------------------'
+    - '&d&lParty Help &7(1/1)'
+    - ''
+    - '&f/party create &7- &fCreate a party'
+    - '&f/party disband &7- &fDisband your party'
+    - '&f/party leave &7- &fLeave your party'
+    - '&f/party join <name> &7- &fJoin a party'
+    - '&f/party kick <player> &7- &fKick a member'
+    - '&f/party open &7- &fMake your party open'
+    - '&f/party close &7- &fMake your party closed'
+    - '&f/party chat <msg> &7- &fSend a chat message'
+    - '&7&m------------------------------------------------'
+  INFO:
+    - '&7&m------------------------------------------------'
+    - '&d&lParty Information'
+    - '&dPrivacy: &7{status}'
+    - '&dLeader: &7{leader}'
+    - '&dMembers: &7({members-size}) &r{members}'
+    - '&7&m------------------------------------------------'
+  NOT_IN_A_PARTY: '&cYou are not in a party.'
+  CREATE: '&dYou have &acreated&d a party.'
+  DISBAND: '&dYour party has been &cdisbanded&d.'
+  INVITE:
+    - '{leader_name} &dhas sent you an invite to their party.'
+    - '%CLICKABLE%&dClick here or type &f/party join {leader_name} &dto accept.'
+  INVITE_HOVER: '&dClick here to &aaccept&d.'
+  INVITE_BROADCAST: '{player_name} &dhas been invited to your party.'
+  JOIN: '{player_name} &dhas joined your party.'
+  LEAVE: '{player_name} &dhas {context} your party.'
+  PRIVACY_CHANGE: '&dYour party privacy has been set to &d&l{new_privacy}&d.'
+  CHAT_PREFIX: '&d[Party] &r'
+  CONTEXT:
+    KICK: been kicked from
+    QUIT: left
+  REQUIRED_ALL_PLAYERS_ON_LOBBY_TO_START: '&cAll player of the party have to be in spawn for you to start another event'
+
+EVENT:
+  CANT_HOST: '&cYou cannot host that event.'
+  HELP:
+    - '&7&m------------------------------------------------'
+    - ''
+    - '&d&lEvent Help &7(1/1)'
+    - '&f/events &7- &fShow events that can be hosted'
+    - '&f/host <type> &7- &fHost an event by name'
+    - '&f/event info &7- &fShows active event information'
+    - '&f/event join &7- &fJoin the event'
+    - '&f/event leave &7- &fLeave the event'
+    - '&7&m------------------------------------------------'
+  JOIN_BROADCAST:
+    - '&7███████'
+    - '&7██&4███&7██'
+    - '&7██&4█&7████  &d&l[{event_name} Event]'
+    - '&7██&4███&7██  &r{host_name} &fis hosting an event!'
+    - '&7██&4█&7████  &r&f&lClick to join!'
+    - '&7██&4███&7██'
+    - '&7███████'
+  JOIN_HOVER: '&dClick to join,'
+  PLAYER_JOIN: '&7[&d&lEvent&7] &r{player_name} &dhas joined the event. &7&o({size}/{maximum})'
+  PLAYER_LEAVE: '&7[&d&lEvent&7] &r{player_name} &dhas left the event. &7&o({remaining}/{maximum})'
+  PLAYER_VOTE: '&7[&d&lEvent&7] &r{player_name} &dhas voted for the &f{map_name} &dmap.
+    &7&o({votes} votes)'
+  ROUND_START: '&7[&d&lEvent&7] &f{participant_a} &dvs &f{participant_b}'
+  ROUND_START_TIMER: '&7[&d&lEvent&7] &fRound {round} &dwill start in &f{time} {context}&d.'
+  ROUND_ELIMINATION: '&7[&d&lEvent&7] &f{loser_name} &d{context} eliminated.'
+  ROUND_OPPONENT: '&7[&d&lEvent&7] &dYour Opponent{context}: &f{name}'
+  STARTED:
+    - '&7[&d&lEvent&7] &f{event_name} &dhas started. &7&o({size}/{maximum})'
+  FINISHED:
+    - '&7███████'
+    - '&7██&4███&7██'
+    - '&7██&4█&7████  &d&l[{event_name} Event]'
+    - '&7██&4███&7██  &r{winner} {context} won the event!'
+    - '&7██&4█&7████  &r&f&lGood game!'
+    - '&7██&4███&7██'
+    - '&7███████'
+  MATCH_REMAINING: '&dThere are {seconds} second{context} left to finish this round!'
+  MATCH_ITS_THE_BOMB: '{player} it''''s the bomb'
+
+DUEL:
+  SENT: '&dYou sent a &f{kit_name} &dduel request to &f{target_name} &don arena &f{arena_name}&d.'
+  SENT_PARTY: '&dYour party sent a &f{kit_name} &dduel request to &f{target_name}''''s
+    party &d(&f{party_size}&d) &don arena &f{arena_name}&d.'
+  RECEIVED:
+    - '&f{sender_name} &dsent you a &f{kit_name} &dduel request on arena &f{arena_name}&d.'
+    - '%CLICKABLE%'
+  RECEIVED_PARTY:
+    - '&f{sender_name}''''s party &d(&f{party_size}&d) &dsent your party a &f{kit_name}
+    &dduel request on arena &f{arena_name}&d.'
+    - '%CLICKABLE%'
+  RECEIVED_HOVER: '&dClick to accept this duel request.'
+  RECEIVED_CLICKABLE: '&dClick here or type &f/duel accept {sender_name} &dto accept.'
+  SENDER_EXPIRE: '&cYour {kit} duel request to {target} has expired!'
+  TARGET_EXPIRE: '&cThe {kit} duel request sent by {sender} has expired!'
+  HAS_EXPIRED: '&cThat duel request has expired!'
+  PLAYER_NOT_FOUND: '&cA player with that name could not be found.'
+  CANNOT_DUEL_YOURSELF: '&cYou cannot duel yourself.'
+  CANNOT_DUEL_RIGHT_NOW: '&cYou cannot duel right now.'
+  IS_BUSY: '&7{player} &cis busy.'
+  IF_PARTY: '&cYou cannot duel whilst in a party.'
+  IF_TARGET_IN_PARTY: '&cThat player is in a party and cannot duel right now.'
+  DONT_RECEIVE_DUELS: '&cThat player is not accepting duel requests at the moment.'
+  ALREADY_SENT: '&cYou already sent that player a duel request.'
+  CANNOT_SEND_PARTY_DUEL: '&cYou cannot send a party duel request to a player that is not in a party.'
+  NO_PLAYER_PARTY: '&cYou cannot send a duel request to a player in a party.'
+  REQUEST_EQUALS_PARTY: '&cYou cannot duel your own party.'
+  NO_PLAYERS_ON_LOBBY_PARTY: '&cAll player of the party have to be in spawn for you to start another event'
+  NOT_HAVE_PARTY: '&cYou do not have a party to duel with.'
+  OTHER_NOT_HAVE_PARTY: '&cThat player does not have a party to duel with.'
+  NO_ARENAS_AVAILABLE: '&cTried to start a match but there are no available arenas.'
+  DONT_HAVE_DUEL_REQUEST_PLAYER: '&cYou do not have a duel request from that player.'
+  DISABLED_COMMAND: '&cYou can''t use this command on match.'
+  NOT_IN_MATCH: '&cYou are not in a match.'
+  NOT_HCF_KIT: '&cThe kit in this fight does not have the HCF rule activated.'
+  RALLY_ACTIVATE_MESSAGE: '&fThe Waypoint has been sent to everyone on your team.'
+  FOCUSED_MESSAGE: '&cYou are focused on {player}.'
+
+QUEUE:
+  JOIN_UNRANKED: '&dYou have been added to the &fUnranked {kit_name} &dqueue.'
+  LEAVE_UNRANKED: '&dYou have been removed from &fUnranked {kit_name} &dqueue.'
+  JOIN_RANKED: '&dYou have been added to the &fRanked {kit_name} &dqueue. &7&o[{elo}
+    ELO]'
+  LEAVE_RANKED: '&dYou have been removed from &fRanked {kit_name} &dqueue.'
+  RANGE_INCREMENT: '&dSearching in ELO range &f[{min_range} -> {max_range}]&d...'
+  NO_ARENAS: '&cNo arenas available'
+  FOUND_RANKED_MATCH: '&d&lFound opponent &f{name} &d({elo}) &dvs &c{opponent} &d({opponent-elo})'
+  FOUND_UNRANKED_MATCH: '&d&lFound opponent &f{name} &dvs &c{opponent}'
+  NOT_IN_PING_RANGE: '&cYou are not in the ping range.'
+  YOU_CANNOT_QUEUE_NOW: '&cYou cannot queue right now.'
+
+MATCH:
+  GIVE_KIT: '&dGiving you the &f{kit_name} &dkit.'
+  WINNER_ROUND: '&f{winner} win this round'
+  ENDERPEARL_COOLDOWN: '&cYou may not use your &c&lEnderpearl &cfor another &c&l{time}
+    second{context}&c.'
+  ENDERPEARL_COOLDOWN_EXPIRED: '&dYour enderpearl cooldown has now expired.'
+  START_SPECTATING: '&dYou are spectating {first_color}{participant_a} &dvs {second_color}{participant_b}'
+  START_SPECTATING_RANKED: '&dYou are spectating {first_color}{participant_a} &7({participant_a_elo})
+    &dvs {second_color}{participant_b} &7({participant_b_elo})'
+  NOW_SPECTATING: '&f{spectator_name} &dis now spectating.'
+  NO_LONGER_SPECTATING: '&f{spectator_name} &dis no longer spectating.'
+  PLAYING_ARENA_NO_AUTHOR: '&dYou are playing on arena &f{arena_name}&d.'
+  PLAYING_ARENA_AUTHOR: '&dYou are playing on arena &f{arena_name}&d, create by &f&l{author}&d.'
+  START_TIMER: '&dThe match starts in &f{time} &dsecond{context}...'
+  STARTED: '&dThe match has started.'
+  WIN_STREAK_MESSAGE: '&dYou are now on a &f{streak}&d win{context} streak!.'
+  LOSE_STREAK_MESSAGE: '&cYou have lost your streak of &f{streak}&c fight{context} won.'
+  BRIDGE_SCORED_POINTS:
+    WINNER_RED:
+      - '&c&l{winner} win'
+      - '&cRed Points&7: &f{red_points}'
+      - '&bBlue Points&7: &f{blue_points}'
+    WINNER_BLUE:
+      - '&b&l{winner} win'
+      - '&bBlue Points&7: &f{blue_points}'
+      - '&cRed Points&7: &f{red_points}'
+  END_DETAILS: # {spectators}
+    - '&7&m------------------------------------------------'
+    - '&d&lMatch Information &7(Click to view)'
+    - '%INVENTORIES%'
+    - '%ELO_CHANGES%'
+    - '&7&m------------------------------------------------'
+  END_WINNER_INVENTORY: '&fWinner{context}: '
+  END_LOSER_INVENTORY: '&cLoser{context}: '
+  CLICK_TO_VIEW_NAME: '&d{color}{name}'
+  CLICK_TO_VIEW_HOVER: '&dClick to view &f{color}{name}&d''''s inventory.'
+  ELO_CHANGES:
+    - '&7&oELO Changes: &a{winning_name} +{winning_elo_mod} ({winning_elo_mod_elo})
+    &c{losser_name} -{losser_elo_mod} ({losser_elo_mod_elo})'
+  PLAYER_KILLED: '{dead_name} &7was slain by {killer_name}&7.'
+  PLAYER_DIED: '{dead_name} &7committed suicide.'
+  BRIDGE_SCORED: '{color}{player} scored a point'
+  STARTED_TITLE: '&f&lStarted'
+  WINNER_TITLE: '&a&lVICTORY!' #This section only works as a single message line
+  WINNER_SUBTITLE: '&a{winner} &fwon the match' #This section only works as a single message line
+  LOSER_TITLE: '&c&lDEFEAT!' #This section only works as a single message line
+  LOSER_SUBTITLE: '&c{winner} &fwon the match' #This section only works as a single message line
+  PERCENT_MESSAGE: '&f&lThe probability to win is &d{your-percent}%&f!"'
+  SET_CHECKPOINT: '&f&lYou have set a new checkpoint &d&l{checkpoints}#&f&l.'
+  PARKOUR_HIDE_PLAYERS: '&cYou have hide all players!'
+  PARKOUR_SHOW_PLAYERS: '&aYou have show all players!'
+  PARKOUR_LAST_CHECKPOINT: '&cYou are teleport to latest checkpoint!'
+  PARKOUR_RESET: '&fYou are teleported to start point!'
+
+REMATCH:
+  SENT_REQUEST:
+    - '&dYou have sent &f{target_name} &da rematch on arena &f{arena_name}&d.'
+  RECEIVED_REQUEST:
+    - '&f{sender_name} &dhas sent you a rematch on arena &f{arena_name}&d.'
+    - '&dClick here or type &f/rematch &dto accept the request.'
+  RECEIVED_REQUEST_HOVER: '&dClick to &aaccept&d.'
+  DO_NOT_HAVE_ANYONE: '&cYou do not have anyone to rematch.'
+  CANCELLED: '&cYou can no longer send that player a rematch.'
+  IS_SENT: '&cYou have already sent a rematch to that player.'
+
+ARROW_DAMAGE_INDICATOR: '&e[&9Arrow Range &e(&c{range}&e)&e] &6{damaged_name} &6is now
+  at &c{damaged_health} &4{symbol}&6.'
+
+FISH_DAMAGE_INDICATOR: '&7[&d&lFish&7] &d{damaged_name} &dis now at &c{damaged_health}
+  &4{symbol}&d.'
+
+VIEWING_INVENTORY: '&dYou are viewing &f{target_name}&d''s inventory...'
+
+CLAN:
+  CREATE: '&fClan {name} create successfully.'
+  SHOW:
+    - '&7&m------------------------------------------------'
+    - '&d&l{name}''s &d&lClan'
+    - ''
+    - '&d&lLeader&7:&f {leader}'
+    - '&d&lMembers&7:&r {members}'
+    - '&d&lPoints&7:&f {points}'
+    - '&d&lTournament Wins&7:&f {tournament_wins}'
+    - '&7&m------------------------------------------------'
+  HELP:
+    - '&7&m------------------------------------------------'
+    - '&d&lClan Help &7(1/1)'
+    - ''
+    - '&f/clan create (name)'
+    - '&f/clan info (name)'
+    - '&f/clan rename (new_name)'
+    - '&f/clan invite (player_name)'
+    - '&f/clan kick (player_name)'
+    - '&f/clan setcolor (color)'
+    - '&f/clan disband'
+    - '&f/clan leave'
+    - '&f/clan list'
+    - '&f/clan chat (message)'
+    - '&7&m------------------------------------------------'
+  DISBAND: '&cClan disband by {player_name}'
+  LEAVE:
+    PLAYER: '&dYou have left the Clan.'
+    BROADCAST: '&d{player_name} left the Clan.'
+  INVITE:
+    SENDER: '&dYou have invited {target_name} &dto join your Clan.'
+    RECEIVER: '&dYou have received an invitation from {clan_name} &dto join their
+      Clan.'
+  RENAME_BROADCAST: '&dClan renamed from &f{old_name} &dto &f{new_name}&d.'
+  JOIN_BROADCAST: '{player_name} &fentered the Clan.'
+  JOIN: '&fYou have entered the Clan.'
+  SET_COLOR_BROADCAST: '&fClan color change to {new_color}&f.'
+  KICKED:
+    BROADCAST: '{target_name} &dhas been kicked from the Clan.'
+    PLAYER: '&dYou have been kicked from the Clan.'
+  ERROR:
+    PLAYER:
+      NOT_FOUND: '&cYou are not in any Clan.'
+      ALREADY_IN_CLAN: '&cYou are already in a Clan.'
+      ALREADY_IN_CLAN_OTHER: '&c{target_name} is already in a Clan.'
+      NOT_IN_YOUR_CLAN: '&c{target_name} is not in your Clan.'
+    ALREADY_EXIST: '&cThere is already a Clan with that name.'
+    MAX_LENGTH_NAME: '&cThe maximum size for a name is 5 letters.'
+    MEMBERS_LIMIT: '&cYour Clan is full of players.'
+    ONLY_OWNER: '&cOnly the Clan Leader can do that.'
+    NOT_INVITATION: '&cYou have not received an invitation from this Clan.'
+    INVITATION_EXPIRED: '&cThe invitation has expired.'
+    OWNER_LEAVE: '&cYou cannot leave your own Clan, for that you must put /clan disband.'
+    DO_NOT_HAVE_A_CLAN: '&cYou do not have a clan.'
+    INSERT_A_MESSAGE: '&cPlease insert a message.'
+
+CHAT:
+  CLEAR_CHAT_BROADCAST: '&dThe chat has been cleared by &r{sender_name}'
+  MUTE_CHAT_BROADCAST: '&dThe chat has been {context} by &r{sender_name}'
+  DELAY_CHAT_ENABLED_BROADCAST: '&dThe chat has been delayed by &r{sender_name} &7({delay_time} second{context})'
+  DELAY_CHAT_DISABLED_BROADCAST: '&dThe chat delay has been lifted by &r{sender_name}'
+  CHAT_DELAYED: '&cSlow down! You may chat again in {delay_time} seconds.'
+  MESSAGE_FILTERED: '&cPlease don''''t write this...'
+  PUBLIC_CHAT_MUTED_MESSAGE: '&cThe public chat is currently muted.'
+
+CLASS:
+  CANNOT_USE: '&cYou cannot use this for another {seconds} seconds!'
+  ON_ITEM_EFFECT_USE: '&dYou´re giving {effect} effect your team'
+  BARD_ENOUGH_ENERGY: '&cThis effect needs {needed-energy} energy but you only have {energy}'
+  USE_BACKSTAB: '&dYou Have backstabbed {victim}'
+  FAILED_BACKSTAB: '&cBackstab failed!'
+  ARCHER_HIT: '&dArcher Hit: &d(&f{distance} blocks&d) &d-> &fTook &d{hearts} &4❤ &fof damage'
+  ARCHER_MARK_APPLY: '&e[&9Arrow Range &e(&c{distance}&e)] &cCannot mark other Archers. &9&l({hearts} heart{context})'
+  ARCHER_MARKED_PLAYER: '&e[&9Arrow Range&e (&c{distance}&e)] &6Marked player for {seconds} seconds. &9&l({damage} heart{context})'
+  ARCHER_IF_NOT_MARKED: '&c&lMarked! &eAn archer has shot you and marked you (+25% damage) for {seconds} seconds.'
+  ARCHER_BOW_WASNT_WITHDRAWN: "&e[&9Arrow Range&e (&c{distance}&e)] &cBow wasn't fully drawn back. &9&l({damage} heart{context})"
+  ROGUE_CANNOT_USE: '&cYou cannot use this for another &4&l{time}&c.'
+
+TOURNAMENT:
+  PLAYER_JOIN: '&f{player} &7has join to tournament.'
+  PARTY_JOIN: '&7Party of {leader} &7has join to tournament.'
+  CLAN_JOIN: '&7Clan &f{color}{clan} &7has join to tournament.'
+  ALREADY_CREATED: '&cThere is already an active tournament.'
+  STOP: '&cTournament has been stopped.'
+  WINNER_MESSAGE:
+    - '{bars}'
+    - '{winner} &f&lhas won Tournament.'
+    - '{bars}'
+  ELIMINATE_PLAYER: '&7{players} &dhas been eliminated.'
+  ELIMINATE_TEAM: '&dThe team of &7{team} &dhas been eliminated.'
+  ELIMINATE_CLAN: '&dClan &f{color}{clan} &dhas been eliminated.'
+  TRY_START_WITHOUT_ARENAS: '&dTried to start a match but there are no available arenas.'
+  NO_PLAYER_FOUND: '&dNo other player found, you should wait in this round.'
+  START: '&7Tournament start in&d {time}'
+  STARTING_MATCH: '&7Starting in &d{time}'
+  NEXT_ROUND: '&7Next round in&d {time}'
+  NO_FOUND: '&cNo tournament found.'
+  ALREADY_IN_TOURNAMENT: '&cYou are already in the tournament.'
+  ONLY_CLAN_JOIN: '&cYou can only enter this tournament with clan.'
+  ONLY_CLAN_OWNER_CAN_JOIN: '&cOnly clan owner can enter.'
+  MINIMUM_PLAYERS_TO_JOIN: '&cYou need a minimum of {size} people to enter the tournament.'
+  IS_FULL: '&cTournament is full.'
+  NEED_A_PARTY_TO_JOIN: '&cYou can only enter this tournament with party.'
+  ONLY_PARTY_OWNER_CAN_JOIN: '&cOnly the party owner can enter.'
+  START_MESSAGE: # This section should always keep a list
+    - '{bars}'
+    - '{clickable}'
+    - '{bars}'
+  CLICKABLE_MESSAGE: '&dTournament started, use /tournament join to enter. &7&o(or &7&oClick &7&ohere &7&oto &7&ojoin)' # This section should always be kept in a single message line
+  CLICKABLE_HOVER: 'Click to join' # This section should always be kept in a single message line
+  FORCE_START: 'Tournament force started.'
+
+STAFF_MODE:
+  NO_PLAYERS_SPEC: '&cNo players to spectating.'
+  NOW_SHOW_ALL_PLAYERS: '&fNow show all Players'
+  NOW_IN_SPAWN: '&cYou back in the Spawn'
+  JOIN_STAFF: '&aJoin Staff Mode'
+  LEAVE_STAFF: '&cLeave Staff Mode'
+
+LUNAR_CLIENT:
+  NOT_RUNNING: '&cYou are not using Lunar Client.'
+
+DEATH_EFFECT:
+  ALREADY_USING: "&cYou already have this death effect"
+  NOW_USING: "&fNow you using &d{death-effect} &fdeath effect."

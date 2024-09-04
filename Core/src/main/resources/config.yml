@@ -1,0 +1,111 @@
+TABLIST_ENABLE: true
+MESSAGE-REPLY-BOOLEAN: true
+ESSENTIAL_SPAWN_LOCATION: world:0.4866430034158719:73.0:0.4929488063843779:0.01554105:1.0994356
+DEFAULT_LANG: "EN" #Langs: "EN" & "ES"
+DEFAULT_TAB_TYPE: "MODERN" #Tab Styles: "MODERN" & "VANILLA"
+MOD_MODE: true
+# You can use 'MONGO' or 'MONGODB' and 'FLATFILE' or 'FILE'
+# If you use the MONGO method you can get information
+# from there for external things like web pages or other statistical things
+SAVE_METHOD: 'FLATFILE'
+CHAT:
+  ACTIVE: true
+  DEFAULT_FORMAT: '{prefix}{player}&7:&r {message}'
+  CLAN_FORMAT: '&7[{clan}&7] &r{prefix}{player}&7:&r {message}'
+  CLAN_MESSAGE_FORMAT: '&9[{clan}] &r{prefix}{player}&7: &c{message}'
+MATCH:
+  ENABLE_LUNAR_THINGS: true # If you want to enable the lunar "/rally" command you need to have bukkitapi in your plugin list (https://github.com/LunarClient/BukkitAPI/releases/)
+  ROUNDS_BRIDGE: 5
+  ROUNDS_RANKED_SUMO: 3
+  REMOVE_BLOCKS_ON_ROUND_END_BRIDGE: true
+  REMOVE_POTION_BOTTLE_ON_CONSUME: true
+  DROP_ITEMS_ON_DEATH: true
+  FAST_POTION: true
+  BOXING_MAX_HITS: 100
+  REMOVE_GLASS_BOTTLE_ON_DROP: true
+  REMOVE_GLASS_BOTTLE_ON_CONSUME: true
+  MOVE_BEFORE_START_MATCH: true
+  ENDERPEARL_XP_COOLDOWN: true
+  BRIDGE_BOW_COOLDOWN: 3 # In seconds
+  DEFAULT_MATCH_WORLD: 'world'
+  MINIMUM_PLAYERS_TO_PARTY_TEAMFIGHT: 1 # 4 Recommended
+  REMOVE_SOUP_ON_CONSUME: true
+  CAN_OP_USE_DISABLED_COMMANDS: false
+  INSTANT_GOLDEN_REGEN: false
+  GOLDEN_HEAD_HEALTH_REGEN: 3.5
+  ONLY_FAC_OWNER_INTERACT_WITH_ELEVATOR: true
+  PERCENT_TO_WIN_MESSAGE: true
+  END_ROUND_TIME: 3 # In seconds
+  DISABLED_COMMANDS: # During Fight and Spectate
+    - "/hub"
+    - "/lobby"
+    - "/fly"
+  ITEMS_ALLOWED_INTERACT_PRE_START_ROUND:
+    - "GOLDEN_APPLE:1" # Please usage this format "ITEM:DATA"
+WINNING-POINTS-CLAN-TOURNAMENT: 100
+QUEUE:
+  RANKED_PING_RANGE_BOOLEAN: true # true Recommended
+  RANKED_PING_RANGE: 300
+  AMOUNT_PER_FIGHTS: true
+EVENT:
+  GIVE_SNOWBALL_SPLEEF: true
+  DAMAGE_SPLEEF: true
+PARTY:
+  DEFAULT_LIMIT: 32
+  VIP_LIMIT: 64
+  CLASS_EFFECTS: # Use this format "effect:duration:amplifier", use this amount of duration to detect is infinite "2147483647"
+    ARCHER:
+      - "SPEED:2147483647:3"
+      - "DAMAGE_RESISTANCE:2147483647:1"
+    ROGUE:
+      - "SPEED:2147483647:2"
+      - "JUMP:2147483647:3"
+    BARD:
+      - "SPEED:2147483647:2"
+      - "DAMAGE_RESISTANCE:2147483647:2"
+      - "REGENERATION:2147483647:1"
+NAMETAGS:
+  DEFAULT_COLOR: '%color%' # Check the ranks.yml for customization
+  PARTY_COLOR: 'BLUE'
+  EVENT_COLOR: 'AQUA'
+  CLAN_FORMAT: '&7[%color%%clan%&7] &r'
+  STAFF_FORMAT: '&8[Staff] %color%'
+STATS_MENU:
+  TITLE: "&d&l{player} Statistics"
+  ITEM_NAME: "&d{kit}"
+  DESCRIPTION:
+    - "{bars}"
+    - "&5● &dElo&7: &f{elo}"
+    - "&5● &dWins&7: &f{wins}"
+    - "&5● &dLosses&7: &f{losses}"
+    - "{bars}"
+ELO:
+  CATEGORY_ENABLE: true
+  CATEGORIES: # Please follow this format "name:needed_elo:displayname" # In the name it is necessary that it does not have spaces
+    - "Silver5:500:&7Silver V"
+    - "Silver4:1000:&7Silver IV"
+    - "Silver3:1015:&7Silver III"
+    - "Silver2:1040:&7Silver II"
+    - "Silver1:1070:&7Silver I"
+    - "Bronze5:1100:&6Bronze V"
+    - "Bronze4:1150:&6Bronze IV"
+    - "Bronze3:1200:&6Bronze III"
+    - "Bronze2:1250:&6Bronze II"
+    - "Bronze1:1300:&6Bronze I"
+    - "Gold5:1350:&eGold V"
+    - "Gold4:1400:&eGold IV"
+    - "Gold3:1450:&eGold III"
+    - "Gold2:1500:&eGold II"
+    - "Gold1:1550:&eGold I"
+    - "Diamond5:1600:&bDiamond V"
+    - "Diamond4:1650:&bDiamond IV"
+    - "Diamond3:1700:&bDiamond III"
+    - "Diamond2:1750:&bDiamond II"
+    - "Diamond1:1800:&bDiamond I"
+    - "Master:1900:&dMaster"
+    - "GrandMaster:2000:&dGrand Master"
+    - "Legendary:2100:&dLegendary"
+    - "Inmortal:2200:&dInmortal"
+    - "Radiant:2300:&6Radiant"
+    - "God:2400:&fGod"
+    - "Lunatic:2500:&5Lunatic"

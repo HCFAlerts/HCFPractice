@@ -1,0 +1,66 @@
+TITLE: "&8Death Effects"
+VARIABLES:
+  USING: "&aYes"
+  NOT_USING: "&cNo"
+FIRE_ITEM:
+  NAME:
+    NORMAL: "&cFire Man"
+    ACQUIRED: "&aFire Man"
+  LORE:
+    NORMAL:
+      - "&7Using this effect you will"
+      - "&7become a super man who endures fire"
+      - ""
+      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+    ACQUIRED:
+      - "&7Using this effect you will"
+      - "&7become a super man who endures fire"
+      - ""
+      - " &7» &aAccessible &7Using: {used}"
+GOD_ITEM:
+  NAME:
+    NORMAL: "&cGod Effect"
+    ACQUIRED: "&aGod Effect"
+  LORE:
+    NORMAL:
+      - "&7If you acquire this effect, people"
+      - "&7will know that you are not just any mortal..."
+      - ""
+      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+    ACQUIRED:
+      - "&7If you acquire this effect, people"
+      - "&7will know that you are not just any mortal..."
+      - ""
+      - " &7» &aAccessible &7Using: {used}"
+HEART_ITEM:
+  NAME:
+    NORMAL: "&cExposed Heart"
+    ACQUIRED: "&aExposed Heart"
+  LORE:
+    NORMAL:
+      - "&7You're a boy in love in..."
+      - "&7Your heart is exposed"
+      - ""
+      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+    ACQUIRED:
+      - "&7You're a boy in love in..."
+      - "&7Your heart is exposed"
+      - ""
+      - " &7» &aAccessible &7Using: {used}"
+THREE_ITEM:
+  NAME:
+    NORMAL: "&cThree Man"
+    ACQUIRED: "&aThree Man"
+  LORE:
+    NORMAL:
+      - "&7The tree man, if I don't move no"
+      - "&7one will see me. The truth is that"
+      - "&7I look like a Christmas tree"
+      - ""
+      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+    ACQUIRED:
+      - "&7The tree man, if I don't move no"
+      - "&7one will see me. The truth is that"
+      - "&7I look like a Christmas tree"
+      - ""
+      - " &7» &aAccessible &7Using: {used}"

@@ -1,0 +1,245 @@
+TABLIST:
+  LEFT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: '&d&lIn Queue&7: &f{inqueue}'
+      head: ''
+    '9':
+      text: '&d&lIn Fight&7: &f{infight}'
+      head: ''
+    '10':
+      text: '&d&lEvent&7: {event}'
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lDiscord'
+      head: ''
+    '19':
+      text: '&7discord.spacehcf.us'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  CENTER:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: '&d&lPractice'
+      head: ''
+    '3':
+      text: '&7{online}/{slots}'
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: ''
+      head: ''
+    '9':
+      text: ''
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lTwitter'
+      head: ''
+    '19':
+      text: '&7@SpaceHCFUS'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  RIGHT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: '&d&lGlobal Elo&7: &f{globalelo}'
+      head: ''
+    '5':
+      text: '&d&lNoDebuff&7: &f{nodebuff_elo}'
+      head: ''
+    '6':
+      text: '&d&lDebuff&7: &f{debuff_elo}'
+      head: ''
+    '7':
+      text: '&d&lBuildUHC&7: &f{builduhc_elo}'
+      head: ''
+    '8':
+      text: '&d&lSkyWars&7: &f{skywars_elo}'
+      head: ''
+    '9':
+      text: '&d&lGapple&7: &f{gapple_elo}'
+      head: ''
+    '10':
+      text: '&d&lHCF&7: &f{hcf_elo}'
+      head: ''
+    '11':
+      text: '&d&lSumoFly&7: &f{sumofly_elo}'
+      head: ''
+    '12':
+      text: '&d&lSumo&7: &f{sumo_elo}'
+      head: ''
+    '13':
+      text: '&d&lCombo&7: &f{combo_elo}'
+      head: ''
+    '14':
+      text: '&d&lBridge&7: &f{bridge_elo}'
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lTeamSpeak'
+      head: ''
+    '19':
+      text: '&7ts.spacehcf.us'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  EXTERNAL-RIGHT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: ''
+      head: ''
+    '9':
+      text: ''
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: ''
+      head: ''
+    '19':
+      text: ''
+      head: ''
+    '20':
+      text: ''
+      head: ''

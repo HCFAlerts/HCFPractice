@@ -1,0 +1,245 @@
+TABLIST:
+  LEFT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: ''
+      head: ''
+    '9':
+      text: ''
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lDiscord'
+      head: ''
+    '19':
+      text: '&7discord.spacehcf.us'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  CENTER:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: '&d&lPractice'
+      head: ''
+    '3':
+      text: '&7{online}/{slots}'
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: ''
+      head: ''
+    '9':
+      text: ''
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lTwitter'
+      head: ''
+    '19':
+      text: '&7@SpaceHCFUS'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  RIGHT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: '&d&lEvent Information'
+      head: ''
+    '6':
+      text: ' &d&lName&7: &f{event}'
+      head: ''
+    '7':
+      text: ' &d&lHost&7: {hoster}'
+      head: ''
+    '8':
+      text: ' &d&lPlayers&7: {remaining-players}/{max-players}'
+      head: ''
+    '9':
+      text: ' &d&lMap&7: &f{map-name}'
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: '&d&lTeamSpeak'
+      head: ''
+    '19':
+      text: '&7ts.spacehcf.us'
+      head: ''
+    '20':
+      text: ''
+      head: ''
+  EXTERNAL-RIGHT:
+    '1':
+      text: ''
+      head: ''
+    '2':
+      text: ''
+      head: ''
+    '3':
+      text: ''
+      head: ''
+    '4':
+      text: ''
+      head: ''
+    '5':
+      text: ''
+      head: ''
+    '6':
+      text: ''
+      head: ''
+    '7':
+      text: ''
+      head: ''
+    '8':
+      text: ''
+      head: ''
+    '9':
+      text: ''
+      head: ''
+    '10':
+      text: ''
+      head: ''
+    '11':
+      text: ''
+      head: ''
+    '12':
+      text: ''
+      head: ''
+    '13':
+      text: ''
+      head: ''
+    '14':
+      text: ''
+      head: ''
+    '15':
+      text: ''
+      head: ''
+    '16':
+      text: ''
+      head: ''
+    '17':
+      text: ''
+      head: ''
+    '18':
+      text: ''
+      head: ''
+    '19':
+      text: ''
+      head: ''
+    '20':
+      text: ''
+      head: ''

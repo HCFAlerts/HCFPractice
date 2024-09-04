@@ -1,0 +1,83 @@
+FAILED_LOAD_PROFILE: "&cFailed to load your profile. Try again later."
+DISCORD: "discord.spacehcf.us"
+STORE: "store.spacehcf.us"
+TEAMSPEAK: "ts.spacehcf.us"
+TWITTER: "@SpaceHCFUS"
+WEBSITE: "www.spacehcf.us"
+TABLIST:
+  HEADER: # {color}, {player}, {rank}, {ping}, {clan}, {tps} and {global}
+    - "&7"
+    - "&d&lSpaceHCF &f&lNetwork &7┃ &f{global}"
+    - "&d&l50% OFF &favailable at &d&l&ostore.spacehcf.us"
+    - ""
+  FOOTER: # {color}, {player}, {rank}, {ping}, {clan}, {tps} and {playing}
+    - "&7"
+    - "&fYou are playing &dPractice &fon &dspacehcf.us"
+    - "&dDiscord&7: &f&odiscord.spacehcf.us"
+    - ""
+ELO:
+  VIEW_FORMAT: " &7➤ &d{kit} &f{elo}"
+  VIEW_YOUR:
+    - "{bars}"
+    - "&5● &d&lElo"
+    - ""
+    - "{format}"
+    - "{bars}"
+  VIEW_OTHER:
+    - "{bars}"
+    - "&5● &d&lElo {color}{player}"
+    - ""
+    - "{format}"
+    - "{bars}"
+DUEL:
+  SELECT:
+    ROUNDS_MENU:
+      TITLE: "&d&lSelect Rounds"
+      INCREASE_ROUNDS_TITLE: "&aIncrease Rounds &7(+1)"
+      DECREASE_ROUNDS_TITLE: "&cDecrease Rounds &7(-1)"
+      DUEL_INFORMATION:
+        LORE_FORMAT:
+          - ""
+          - "&5● &dCurrent Rounds&7: &f{rounds}"
+          - "&5● &dArena&7: &f{arena}"
+          - "&5● &dKit&7: &f{kit}"
+          - "&5● &dRival&7: &f{rival}"
+      CONFIRM_BUTTON:
+        NAME: "&aConfirm"
+        MATERIAL: "DIAMOND_BLOCK"
+        DATA: 0
+        LORE:
+          - "&7Right Click to send duel request"
+    ARENA_MENU:
+      TITLE: "&d&lSelect an Arena"
+      MATERIAL: "PAPER"
+      NAME: "&d{name}"
+      RANDOM_MATERIAL: "NETHER_STAR"
+      RANDOM_NAME: "&dRandom Arena"
+    KIT_MENU:
+      TITLE: "&d&lSelect a kit"
+      NAME: "&d{name}"
+MATCH:
+  BRIDGE_SYMBOL: "✘"
+PARTY:
+  SPLIT:
+    NAME: "&d{name}"
+    LORE:
+      - "{bars}"
+      - "&7&oThe party is divided into two"
+      - "&7&oTeams and they fight"
+      - "{bars}"
+  FFA:
+    NAME: "&d{name}"
+    LORE:
+      - "{bars}"
+      - "&7&oA fight all against all"
+      - "&7&oAnd the last one to stay alive wins"
+      - "{bars}"
+  HCFTEAMFIGHT:
+    NAME: "&d{name}"
+    LORE:
+      - "{bars}"
+      - "&7&oThe party is divided into two"
+      - "&7&oTeams with HCF classes and they fight"
+      - "{bars}"
