@@ -1,6 +1,5 @@
 # HCFPractice | v1.0
-* Yang Practice Fork | [LiteClubDevelopment](https://github.com/LiteClubDevelopment)
-* All Credits to [Panda Development](https://discord.panda.dev) and [Yang Core](https://builtbybit.com/yang-practice-core)
+* [cPractice Fork](https://github.com/hmRemi/cPractice) | [LiteClubDevelopment](https://github.com/LiteClubDevelopment)
 ---
 ## Added Features
 - Improved Menus
@@ -41,11 +40,6 @@
 - [ ] Fix KitEditorSelectKitMenu and KitManagementMenu
 - [ ] Improve the Party Events Menus
 - [ ] Improve the HCF-TeamFight System
-
----
-
-## License
-This project is licensed under the [Yang License](LICENSE).
 
 ---
 ## Contributors
