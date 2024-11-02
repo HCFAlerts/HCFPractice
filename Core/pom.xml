@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.5.1</version>
                 <configuration>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
                     <shadedArtifactAttached>false</shadedArtifactAttached>
@@ -133,7 +133,8 @@
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
             <version>2.10.9</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/PlaceholderAPI.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.gmail.filoghost.holographicdisplays</groupId>
@@ -224,7 +225,7 @@
             <artifactId>api</artifactId>
             <version>5.2</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/LuckPerms.jar</systemPath>
+            <systemPath>${project.basedir}/libs/permissions/LuckPerms-Bukkit.jar</systemPath>
         </dependency>
 
         <!-- SurfCore API #349937140802519051 -->
@@ -241,6 +242,12 @@
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>3.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>26.0.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
