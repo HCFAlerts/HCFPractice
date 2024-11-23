@@ -15,9 +15,9 @@ public class ListWorldsCommand extends BaseCommand {
     public void onCommand(CommandArgs commandArgs) {
         Player player = commandArgs.getPlayer();
 
-        player.sendMessage(CC.DARK_GREEN + "List Worlds");
+        player.sendMessage(CC.PINK + CC.BOLD + "Worlds");
         for (World world : Bukkit.getWorlds()) {
-            player.sendMessage(CC.GRAY + "- " + CC.GREEN + world.getName() + CC.GRAY + " (" + CC.GREEN + world.getEnvironment().name() + CC.GRAY + ")");
+            player.sendMessage(CC.DARK_PURPLE + "┃ " + CC.WHITE + world.getName() + CC.GRAY + " (" + CC.PINK + world.getEnvironment().name() + CC.GRAY + ")");
         }
     }
 }

@@ -20,7 +20,7 @@ CONVERSATION:
 JOIN_MESSAGES:
   - '  '
   - ' &7[&a+&7] &fBienvenido/a a &d&lPractice &7[Temporada 1]'
-  - ' &7[&a+&7] &fPara mayor información visita&7: &ddiscord.spacehcf.us'
+  - ' &7[&a+&7] &fPara mayor información visita&7: &ddsc.gg/liteclubdevelopment'
   - '  '
 
 ARENA:
@@ -41,11 +41,11 @@ PARTY:
     - '&f/party create &7- &fCrear una Party'
     - '&f/party disband &7- &fEliminar una Party'
     - '&f/party leave &7- &fSalir de tu Party'
-    - '&f/party join <name> &7- &fEntrar a una Party'
-    - '&f/party kick <player> &7- &fExpulsar a un miembro'
+    - '&f/party join <nombre> &7- &fEntrar a una Party'
+    - '&f/party kick <jugador> &7- &fExpulsar a un miembro'
     - '&f/party open &7- &fPoner tu Party para todo el Público'
     - '&f/party close &7- &fPoner tu Party privada'
-    - '&f/party chat <msg> &7- &fEnviar mensaje a la Party'
+    - '&f/party chat <mensaje> &7- &fEnviar mensaje a la Party'
     - '&7&m------------------------------------------------'
   INFO:
     - '&7&m------------------------------------------------'
@@ -78,7 +78,7 @@ EVENT:
     - '&d&lEvent Help &7(1/1)'
     - ''
     - '&f/events &7- &fMostrar los eventos que se pueden hostear'
-    - '&f/host <type> &7- &fHostear un evento por su nombre'
+    - '&f/host <tipo> &7- &fHostear un evento por su nombre'
     - '&f/event info &7- &fMostrar la información de los eventos activos'
     - '&f/event join &7- &fEntrar al evento'
     - '&f/event leave &7- &fSalir del evento'
@@ -106,8 +106,8 @@ EVENT:
     - '&7███████'
     - '&7██&4███&7██'
     - '&7██&4█&7████  &d&l[{event_name} Evento]'
-    - '&7██&4███&7██  &r{winner} &6ganó el evento!'
-    - '&7██&4█&7████  &r&f&l¡Buen Juego!'
+    - '&7██&4███&7██  &r{winner} ganó el evento!'
+    - '&7██&4█&7████  &r&f&l¡Bien Jugado!'
     - '&7██&4███&7██'
     - '&7███████'
   MATCH_REMAINING: '&eQuedan {seconds} segundo{context} para que termine esta ronda!'
@@ -177,8 +177,7 @@ MATCH:
   NOW_SPECTATING: '&f{spectator_name} &eahora esta espectando.'
   NO_LONGER_SPECTATING: '&f{spectator_name} &eya no esta espectando.'
   PLAYING_ARENA_NO_AUTHOR: '&eEstas jugando en la arena &f{arena_name}&e.'
-  PLAYING_ARENA_AUTHOR: '&eEstas jugando en la arena &f{arena_name}&e, creado por
-    &f&l{author}&e.'
+  PLAYING_ARENA_AUTHOR: '&eEstas jugando en la arena &f{arena_name}&e.' # {author}
   START_TIMER: '&eEl duelo comienza en &f{time} &esegundo{context}...'
   STARTED: '&eEl duelo ha comenzado.'
   WIN_STREAK_MESSAGE: '&eAhora llevas una racha de &f{streak}&e pelea{context} ganadas!.'
@@ -192,7 +191,7 @@ MATCH:
       - '&9&l{winner} ganó'
       - '&9Puntos Azul&7: &f{blue_points}'
       - '&cPuntos Rojo&7: &f{red_points}'
-  END_DETAILS:
+  END_DETAILS: # {spectators}
     - '&7&m------------------------------------------------'
     - '&d&lInformación de la Partida &7(Clic para ver)'
     - '%INVENTORIES%'
@@ -208,11 +207,11 @@ MATCH:
   PLAYER_KILLED: '{dead_name} &7ha sido asesinado por {killer_name}&7.'
   PLAYER_DIED: '{dead_name} &7se suicidó.'
   BRIDGE_SCORED: '{color}{player} obtuvo un punto'
-  STARTED_TITLE: '&f&lIniciado'
-  WINNER_TITLE: '&fVICTORIA!' #Esta sección solo funciona como linea única de mensaje
-  WINNER_SUBTITLE: '&f{winner} &fha ganado la Pelea!' #Esta sección solo funciona como linea única de mensaje
-  LOSER_TITLE: '&cDERROTA!' #Esta sección solo funciona como linea única de mensaje
-  LOSER_SUBTITLE: '&c{winner} &fha ganado la Pelea!' #Esta sección solo funciona como linea única de mensaje
+  STARTED_TITLE: '&fa&lBUENA SUERTE'
+  WINNER_TITLE: '&a&l¡VICTORIA!' #Esta sección solo funciona como linea única de mensaje
+  WINNER_SUBTITLE: '&a{winner} &fha ganado la pelea!' #Esta sección solo funciona como linea única de mensaje
+  LOSER_TITLE: '&c&l¡DERROTA!' #Esta sección solo funciona como linea única de mensaje
+  LOSER_SUBTITLE: '&c{winner} &fha ganado la pelea!' #Esta sección solo funciona como linea única de mensaje
   PERCENT_MESSAGE: '&f&lLa probabilidad para ganar es &e{your-percent}%&f!"'
   SET_CHECKPOINT: '&f&lHas seteado un nuevo checkpoint! &e&l{checkpoints}#&f&l.'
   PARKOUR_HIDE_PLAYERS: '&eHas ocultado a todos los jugadores!'
@@ -254,16 +253,16 @@ CLAN:
     - '&7&m------------------------------------------------'
     - '&d&lClan Help &7(1/1)'
     - ''
-    - '&f/clan create (name)'
-    - '&f/clan info (name)'
-    - '&f/clan rename (new_name)'
-    - '&f/clan invite (player_name)'
-    - '&f/clan kick (player_name)'
+    - '&f/clan create (nombre)'
+    - '&f/clan info (nombre)'
+    - '&f/clan rename (nuevo_nombre)'
+    - '&f/clan invite (nombre_del_jugador)'
+    - '&f/clan kick (nombre_del_jugador)'
     - '&f/clan setcolor (color)'
     - '&f/clan disband'
     - '&f/clan leave'
     - '&f/clan list'
-    - '&f/clan chat (message)'
+    - '&f/clan chat (mensaje)'
     - '&7&m------------------------------------------------'
   DISBAND: '&cClan disuelto por {player_name}'
   LEAVE:
@@ -319,15 +318,28 @@ CLASS:
   ROGUE_CANNOT_USE: '&cNo puedes usar esto durante &4&l{time}&c.'
 
 TOURNAMENT:
+  HELP:
+    - '&7&m------------------------------------------------'
+    - '&d&lTournament Help &7(1/1)'
+    - ''
+    - '&f/tournament start (kit) (tamaño) (limite) [true/false]'
+    - '&f/tournament forcestart'
+    - '&f/tournament stop'
+    - '&f/tournament join'
+    - '&7&m------------------------------------------------'
   PLAYER_JOIN: '&f{player} &7ha entrado al tournament.'
   PARTY_JOIN: '&7La Party de {leader} &7ha entrado al tournament.'
   CLAN_JOIN: '&7El Clan &f{color}{clan} &7ha entrado al tournament.'
   ALREADY_CREATED: '&cYa hay un Tournament activo.'
   STOP: '&cEl Tournament se ha cancelado.'
   WINNER_MESSAGE:
-    - '{bars}'
-    - '{winner} &b&lha ganado el Tournament.'
-    - '{bars}'
+    - '&7███████'
+    - '&7██&4███&7██'
+    - '&7███&4█&7███  &r{winner} gano'
+    - '&7███&4█&7███  &rel torneo!'
+    - '&7███&4█&7███  &r&f&l¡Bien Jugado!'
+    - '&7███&4█&7███'
+    - '&7███████'
   ELIMINATE_PLAYER: '&7{players} &eha sido eliminado.'
   ELIMINATE_TEAM: '&eEl team &7{team} &eha sido eliminado.'
   ELIMINATE_CLAN: '&eEl Clan &f{color}{clan} &eha sido eliminado.'
@@ -343,12 +355,12 @@ TOURNAMENT:
   MINIMUM_PLAYERS_TO_JOIN: '&cNecesitas un minimo de {size} players para entrar al tournament.'
   IS_FULL: '&cEl tournament está lleno.'
   NEED_A_PARTY_TO_JOIN: '&cSolo puedes entrar al tournament con una Party.'
-  ONLY_PARTY_OWNER_CAN_JOIN: '&cSolamente el Leader de la Party puede entrar.'
+  ONLY_PARTY_OWNER_CAN_JOIN: '&cSolamente el Lider de la Party puede entrar.'
   START_MESSAGE: # This section should always keep a list
     - '{bars}'
     - '{clickable}'
     - '{bars}'
-  CLICKABLE_MESSAGE: '&dTournament iniciado, usa \"/tournament join\" para entrar. &7&o(o &7&oClic &7&oaqui &7&opara &7&oentrar)' # Esta seccion solo funciona con una unica linea de mensaje
+  CLICKABLE_MESSAGE: '&dTournament iniciado, usa /tournament join para entrar. &7&o(o &7&oClic &7&oaqui &7&opara &7&oentrar)' # Esta seccion solo funciona con una unica linea de mensaje
   CLICKABLE_HOVER: 'Clic para entrar' # Esta seccion solo funciona con una unica linea de mensaje
   FORCE_START: 'Tournament iniciado forzosamente.'
 

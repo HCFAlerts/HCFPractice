@@ -32,6 +32,7 @@ public class StatsButton extends Button {
                     if (!kit.getGameRules().isRanked()) continue;
                     lore.add(HCFPractice.get().getLeaderboardConfig().getString("CUSTOM_ITEMS.PERSONAL_STATS.KITS_FORMAT")
                             .replace("{kit}", kit.getName())
+                            .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                             .replace("{color}", profile.getColor())
                             .replace("{data}", String.valueOf(profile.getKitData().get(kit).getElo())));
                 }
@@ -46,6 +47,7 @@ public class StatsButton extends Button {
                 .durability(3)
                 .name(HCFPractice.get().getLeaderboardConfig().getString("CUSTOM_ITEMS.PERSONAL_STATS.TITLE")
                         .replace("{color}", profile.getColor())
+                        .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                         .replace("{name}", target.getName()))
                 .lore(lore)
                 .build();

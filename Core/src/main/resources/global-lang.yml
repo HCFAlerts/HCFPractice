@@ -1,19 +1,19 @@
 FAILED_LOAD_PROFILE: "&cFailed to load your profile. Try again later."
-DISCORD: "discord.spacehcf.us"
-STORE: "store.spacehcf.us"
-TEAMSPEAK: "ts.spacehcf.us"
-TWITTER: "@SpaceHCFUS"
-WEBSITE: "www.spacehcf.us"
+DISCORD: "dsc.gg/liteclubdevelopment"
+STORE: "store.liteclub.dev"
+TEAMSPEAK: "ts.liteclub.dev"
+TWITTER: "@LiteClubDEV"
+WEBSITE: "www.liteclub.dev"
 TABLIST:
-  HEADER: # {color}, {player}, {rank}, {ping}, {clan}, {tps} and {global}
+  HEADER: # Variables: {color}, {player}, {rank}, {ping}, {clan}, {tps} and {global}
     - "&7"
-    - "&d&lSpaceHCF &f&lNetwork &7┃ &f{global}"
-    - "&d&l50% OFF &favailable at &d&l&ostore.spacehcf.us"
+    - "&d&lLiteClub &f&lNetwork &7┃ &f{global}"
+    - "&d&l50% OFF &favailable at &d&l&ostore.liteclub.dev"
     - ""
-  FOOTER: # {color}, {player}, {rank}, {ping}, {clan}, {tps} and {playing}
+  FOOTER: # Variables: {color}, {player}, {rank}, {ping}, {clan}, {tps} and {playing}
     - "&7"
-    - "&fYou are playing &dPractice &fon &dspacehcf.us"
-    - "&dDiscord&7: &f&odiscord.spacehcf.us"
+    - "&fYou are playing &dPractice &fon &dliteclub.dev"
+    - "&dDiscord&7: &f&odsc.gg/liteclubdevelopment"
     - ""
 ELO:
   VIEW_FORMAT: " &7➤ &d{kit} &f{elo}"
@@ -79,5 +79,5 @@ PARTY:
     LORE:
       - "{bars}"
       - "&7&oThe party is divided into two"
-      - "&7&oTeams with HCF classes and they fight"
+      - "&7&oTeams with HCF classes, abilities and more"
       - "{bars}"

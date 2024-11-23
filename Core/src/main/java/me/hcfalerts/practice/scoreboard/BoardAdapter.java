@@ -81,7 +81,8 @@ public class BoardAdapter implements AssembleAdapter {
 						.replace("{in-fights-ranked}", String.valueOf(HCFPractice.get().getInFightsRanked()))
 						.replace("{in-fights-unranked}", String.valueOf(HCFPractice.get().getInFightsUnRanked()))
 						.replace("{in-queue}", String.valueOf(HCFPractice.get().getInQueues()))
-						.replace("{elo}", String.valueOf(EloUtil.getGlobalElo(profile))));
+						.replace("{elo}", String.valueOf(EloUtil.getGlobalElo(profile)))
+						.replace("{category}", String.valueOf(profile.getCategory().getDisplayName())));
 			}
 		}
 		else if (profile.getState() == ProfileState.QUEUEING) {
@@ -107,6 +108,7 @@ public class BoardAdapter implements AssembleAdapter {
 						.replace("{in-fights-unranked}", String.valueOf(HCFPractice.get().getInFightsUnRanked()))
 						.replace("{in-queue}", String.valueOf(HCFPractice.get().getInQueues()))
 						.replace("{elo}", String.valueOf(EloUtil.getGlobalElo(profile)))
+						.replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
 						.replace("{elapsed}", TimeUtil.millisToTimer(queueProfile.getPassed()))
 						.replace("{queue}", queueProfile.getQueue().getQueueName()));
 			}

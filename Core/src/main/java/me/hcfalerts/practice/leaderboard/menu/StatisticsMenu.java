@@ -18,10 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/*
-This Proyect has been created
-by TulioTriviño#6969
-*/
 @RequiredArgsConstructor
 public class StatisticsMenu extends Menu {
 

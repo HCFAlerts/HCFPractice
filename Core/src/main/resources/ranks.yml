@@ -1,6 +1,8 @@
-#In this section you must add all the existing ranges on your server,
+#In this section you must add all the existing ranks on your server,
 #if you forget one when that person enters you will not stop skipping errors.
-groups:
+RANKS:
   Owner: '&4'
   Co-Owner: '&4'
   Default: '&a'
+#If the player rank color doesn't exist use this.
+INVALID-RANK-COLOR:  '&a'

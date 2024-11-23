@@ -1,20 +1,21 @@
-DEFAULT_MODE: true # Its necessary restart server to apply changes
+DEFAULT_MODE: false # Its necessary restart server to apply changes
+MENU_TITLE: "&d&lLeaderboards"
 CUSTOM_ITEMS:
   GLOBAL_STATS:
     TITLE: "&dTop 10 &5Global"
     POSITIONS:
       1:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
       2:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
       3:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
         - "{bars}"
       ANOTHER:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
   PERSONAL_STATS:
     TITLE: "&dStatistics {color}{name}"
-    KITS_FORMAT: "&d{kit}&7: {color}{data}"
+    KITS_FORMAT: "&d{kit}&7: &f{data}"
     DESCRIPTION:
       - "{bars}"
       - "{kits}"
@@ -25,18 +26,19 @@ CUSTOM_ITEMS:
     TITLE: "&dTop 10 &5{kit}"
     POSITIONS:
       1:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
       2:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
       3:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
         - "{bars}"
       ANOTHER:
-        - "&5● &d{pos} {color}{name}&7: &r{data}"
+        - "&5● &d#{pos} &7[{category}&7] {color}{name}&7: &r{data}"
 CUSTOM_SECTION:
   INVENTORY:
     ROWS: 5
     FILL_EMPTY_SLOTS: true
+    DATA: 15
     ITEMS:
       4: "{global-stats}"
       6: "{personal-stats}"

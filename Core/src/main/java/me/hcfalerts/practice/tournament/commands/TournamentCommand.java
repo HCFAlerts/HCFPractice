@@ -1,13 +1,15 @@
 package me.hcfalerts.practice.tournament.commands;
 
+import me.hcfalerts.practice.Locale;
+import me.hcfalerts.practice.profile.Profile;
 import me.hcfalerts.practice.tournament.commands.subcommands.TournamentForcestartCommand;
 import me.hcfalerts.practice.tournament.commands.subcommands.TournamentJoinCommand;
 import me.hcfalerts.practice.tournament.commands.subcommands.TournamentStartCommand;
 import me.hcfalerts.practice.tournament.commands.subcommands.TournamentStopCommand;
-import me.hcfalerts.practice.utilities.chat.CC;
 import me.hcfalerts.practice.utilities.command.BaseCommand;
 import me.hcfalerts.practice.utilities.command.Command;
 import me.hcfalerts.practice.utilities.command.CommandArgs;
+import me.hcfalerts.practice.utilities.string.MessageFormat;
 import org.bukkit.entity.Player;
 
 public class TournamentCommand extends BaseCommand {
@@ -23,11 +25,6 @@ public class TournamentCommand extends BaseCommand {
     @Override
     public void onCommand(CommandArgs commandArgs) {
         Player player = commandArgs.getPlayer();
-
-        player.sendMessage(CC.translate("&e&lTournament Help"));
-        player.sendMessage(CC.translate("&7/tournament start (kit) (size) (limit) [true/false]"));
-        player.sendMessage(CC.translate("&7/tournament forcestart"));
-        player.sendMessage(CC.translate("&7/tournament stop"));
-        player.sendMessage(CC.translate("&7/tournament join"));
+        new MessageFormat(Locale.TOURNAMENT_HELP.format(Profile.get(player.getUniqueId()).getLocale())).send(player);
     }
 }

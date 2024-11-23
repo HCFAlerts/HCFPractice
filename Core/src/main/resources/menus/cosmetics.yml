@@ -11,7 +11,7 @@ FIRE_ITEM:
       - "&7Using this effect you will"
       - "&7become a super man who endures fire"
       - ""
-      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+      - " &7» &cInaccesible &7Buy in &ostore.liteclub.dev"
     ACQUIRED:
       - "&7Using this effect you will"
       - "&7become a super man who endures fire"
@@ -26,7 +26,7 @@ GOD_ITEM:
       - "&7If you acquire this effect, people"
       - "&7will know that you are not just any mortal..."
       - ""
-      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+      - " &7» &cInaccesible &7Buy in &ostore.liteclub.dev"
     ACQUIRED:
       - "&7If you acquire this effect, people"
       - "&7will know that you are not just any mortal..."
@@ -41,7 +41,7 @@ HEART_ITEM:
       - "&7You're a boy in love in..."
       - "&7Your heart is exposed"
       - ""
-      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+      - " &7» &cInaccesible &7Buy in &ostore.liteclub.dev"
     ACQUIRED:
       - "&7You're a boy in love in..."
       - "&7Your heart is exposed"
@@ -57,7 +57,7 @@ THREE_ITEM:
       - "&7one will see me. The truth is that"
       - "&7I look like a Christmas tree"
       - ""
-      - " &7» &cInaccesible &7Buy in &ostore.spacehcf.us"
+      - " &7» &cInaccesible &7Buy in &ostore.liteclub.dev"
     ACQUIRED:
       - "&7The tree man, if I don't move no"
       - "&7one will see me. The truth is that"

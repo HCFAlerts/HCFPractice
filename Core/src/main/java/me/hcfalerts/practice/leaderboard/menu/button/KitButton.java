@@ -44,6 +44,7 @@ public class KitButton extends Button {
                     for (String s : first) {
                         lore.add(s
                                 .replace("{pos}", String.valueOf(pos))
+                                .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                                 .replace("{name}", profile.getName())
                                 .replace("{color}", profile.getColor())
                                 .replace("{data}", String.valueOf(profile.getKitData().getOrDefault(kit, new ProfileKitData()).getElo()))
@@ -54,6 +55,7 @@ public class KitButton extends Button {
                     for (String s : second) {
                         lore.add(s
                                 .replace("{pos}", String.valueOf(pos))
+                                .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                                 .replace("{name}", profile.getName())
                                 .replace("{color}", profile.getColor())
                                 .replace("{data}", String.valueOf(profile.getKitData().getOrDefault(kit, new ProfileKitData()).getElo()))
@@ -64,6 +66,7 @@ public class KitButton extends Button {
                     for (String s : third) {
                         lore.add(s
                                 .replace("{pos}", String.valueOf(pos))
+                                .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                                 .replace("{name}", profile.getName())
                                 .replace("{color}", profile.getColor())
                                 .replace("{data}", String.valueOf(profile.getKitData().getOrDefault(kit, new ProfileKitData()).getElo()))
@@ -74,6 +77,7 @@ public class KitButton extends Button {
                     for (String s : another) {
                         lore.add(s
                                 .replace("{pos}", String.valueOf(pos))
+                                .replace("{category}", String.valueOf(profile.getCategory().getDisplayName()))
                                 .replace("{name}", profile.getName())
                                 .replace("{color}", profile.getColor())
                                 .replace("{data}", String.valueOf(profile.getKitData().getOrDefault(kit, new ProfileKitData()).getElo()))

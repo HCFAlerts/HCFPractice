@@ -21,6 +21,8 @@ public class PracticeTags extends NametagProvider {
             if (viewerProfile.getParty() != null && viewerProfile.getParty().containsPlayer(target.getUniqueId())) {
                 return createNametag(ChatColor.valueOf(
                         HCFPractice.get().getMainConfig().getString("NAMETAGS.PARTY_COLOR")).toString()
+                        .replace("%prefix%", HCFPractice.get().getRankManager().getRank().getPrefix(target.getUniqueId()))
+                        .replace("%suffix%", HCFPractice.get().getRankManager().getRank().getSuffix(target.getUniqueId()))
                         , "");
             }
         }
@@ -36,6 +38,8 @@ public class PracticeTags extends NametagProvider {
             if (targetProfile.getState() == ProfileState.EVENT) {
                 return createNametag(ChatColor.valueOf(
                         HCFPractice.get().getMainConfig().getString("NAMETAGS.EVENT_COLOR")).toString()
+                        .replace("%prefix%", HCFPractice.get().getRankManager().getRank().getPrefix(target.getUniqueId()))
+                        .replace("%suffix%", HCFPractice.get().getRankManager().getRank().getSuffix(target.getUniqueId()))
                         , "");
             }
         }
@@ -50,20 +54,27 @@ public class PracticeTags extends NametagProvider {
         }
         else if (targetProfile.getState() == ProfileState.STAFF_MODE) {
             return createNametag(HCFPractice.get().getMainConfig().getString("NAMETAGS.STAFF_FORMAT")
+                    .replace("%prefix%", HCFPractice.get().getRankManager().getRank().getPrefix(target.getUniqueId()))
+                    .replace("%suffix%", HCFPractice.get().getRankManager().getRank().getSuffix(target.getUniqueId()))
                     .replace("%color%", targetProfile.getColor()), "");
         }
 
         if (targetProfile.getClan() != null) {
             return createNametag(
                     HCFPractice.get().getMainConfig().getString("NAMETAGS.CLAN_FORMAT")
-                    .replace("%color%", targetProfile.getClan().getColor().toString())
+                    .replace("%clancolor%", targetProfile.getClan().getColor().toString())
                     .replace("%clan%", targetProfile.getClan().getName())
+                    .replace("%color%", targetProfile.getColor())
+                    .replace("%prefix%", HCFPractice.get().getRankManager().getRank().getPrefix(target.getUniqueId()))
+                    .replace("%suffix%", HCFPractice.get().getRankManager().getRank().getSuffix(target.getUniqueId()))
                     , "");
         }
 
-        return createNametag(HCFPractice.get().getMainConfig().getString("NAMETAGS.DEFAULT_COLOR").contains("%color%") ?
-                targetProfile.getColor() :
-                ChatColor.valueOf(HCFPractice.get().getMainConfig().getString("NAMETAGS.DEFAULT_COLOR")).toString()
+        return createNametag(
+                HCFPractice.get().getMainConfig().getString("NAMETAGS.DEFAULT_COLOR")
+                .contains("%color%") ? targetProfile.getColor() : ChatColor.valueOf(HCFPractice.get().getMainConfig().getString("NAMETAGS.DEFAULT_COLOR")).toString()
+                .replace("%prefix%", HCFPractice.get().getRankManager().getRank().getPrefix(target.getUniqueId()))
+                .replace("%suffix%", HCFPractice.get().getRankManager().getRank().getSuffix(target.getUniqueId()))
                 , "");
     }
 }

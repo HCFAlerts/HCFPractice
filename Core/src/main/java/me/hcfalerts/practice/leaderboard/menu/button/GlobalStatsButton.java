@@ -20,6 +20,7 @@ public class GlobalStatsButton extends Button {
 
     @Override
     public ItemStack getButtonItem(Player player){
+        Profile profile2 = Profile.get(player.getUniqueId());
         List<String> lore = Lists.newArrayList();
         List<Profile> profiles = new ArrayList<>();
         long limit = 10;
@@ -38,6 +39,7 @@ public class GlobalStatsButton extends Button {
                 for (String s : first) {
                     lore.add(s
                             .replace("{pos}", String.valueOf(pos.get()))
+                            .replace("{category}", String.valueOf(profile2.getCategory().getDisplayName()))
                             .replace("{name}", leaderboard.getName())
                             .replace("{color}", leaderboard.getColor())
                             .replace("{data}", String.valueOf(EloUtil.getGlobalElo(leaderboard)))
@@ -49,6 +51,7 @@ public class GlobalStatsButton extends Button {
                 for (String s : second) {
                     lore.add(s
                             .replace("{pos}", String.valueOf(pos.get()))
+                            .replace("{category}", String.valueOf(profile2.getCategory().getDisplayName()))
                             .replace("{name}", leaderboard.getName())
                             .replace("{color}", leaderboard.getColor())
                             .replace("{data}", String.valueOf(EloUtil.getGlobalElo(leaderboard)))
@@ -60,6 +63,7 @@ public class GlobalStatsButton extends Button {
                 for (String s : third) {
                     lore.add(s
                             .replace("{pos}", String.valueOf(pos.get()))
+                            .replace("{category}", String.valueOf(profile2.getCategory().getDisplayName()))
                             .replace("{name}", leaderboard.getName())
                             .replace("{color}", leaderboard.getColor())
                             .replace("{data}", String.valueOf(EloUtil.getGlobalElo(leaderboard)))
@@ -71,6 +75,7 @@ public class GlobalStatsButton extends Button {
                 for (String s : another) {
                     lore.add(s
                             .replace("{pos}", String.valueOf(pos.get()))
+                            .replace("{category}", String.valueOf(profile2.getCategory().getDisplayName()))
                             .replace("{name}", leaderboard.getName())
                             .replace("{color}", leaderboard.getColor())
                             .replace("{data}", String.valueOf(EloUtil.getGlobalElo(leaderboard)))

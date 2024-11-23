@@ -306,8 +306,6 @@ public class HCFPractice extends JavaPlugin {
             }
         }
 
-        // Set the difficulty for each world to HARD
-        // Clear the droppedItems for each world
         for (World world : getServer().getWorlds()) {
             world.setDifficulty(Difficulty.HARD);
             world.setGameRuleValue("doDaylightCycle", "false");

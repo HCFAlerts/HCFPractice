@@ -23,7 +23,7 @@ public class LeaderBoardMenu extends Menu {
 
     @Override
     public String getTitle(Player player) {
-        return "&d&lStatistics";
+        return HCFPractice.get().getLeaderboardConfig().getString("MENU_TITLE");
     }
 
     @Override
@@ -37,12 +37,13 @@ public class LeaderBoardMenu extends Menu {
 
     @Override
     public Map<Integer, Button> getButtons(Player player){
+        int data = HCFPractice.get().getLeaderboardConfig().getInteger("CUSTOM_SECTION.INVENTORY.DATA");
         Map<Integer, Button> buttons = Maps.newHashMap();
         Button empty = new Button() {
             @Override
             public ItemStack getButtonItem(Player player) {
                 return new ItemBuilder(Material.STAINED_GLASS_PANE)
-                        .durability(15)
+                        .durability(data)
                         .name("")
                         .build();
             }

@@ -148,10 +148,10 @@ public class ProfileListener implements Listener {
 		profile.setMatch(null);
 		profile.setEnderpearlCooldown(new Cooldown(0));
 		profile.setSelectedKit(null);
-		if (HCFPractice.get().getColoredRanksConfig().getConfiguration().contains("groups." + HCFPractice.get().getRankManager().getRank().getName(player.getUniqueId()))) {
-			profile.setColor(HCFPractice.get().getColoredRanksConfig().getString("groups." + HCFPractice.get().getRankManager().getRank().getName(player.getUniqueId())));
+		if (HCFPractice.get().getColoredRanksConfig().getConfiguration().contains("RANKS." + HCFPractice.get().getRankManager().getRank().getName(player.getUniqueId()))) {
+			profile.setColor(HCFPractice.get().getColoredRanksConfig().getString("RANKS." + HCFPractice.get().getRankManager().getRank().getName(player.getUniqueId())));
 		} else {
-			profile.setColor("&r");
+			profile.setColor(HCFPractice.get().getColoredRanksConfig().getString("INVALID-RANK-COLOR"));
 			throw new IllegalArgumentException("The colored rank of " + player.getName() + " doesn't exist");
 		}
 		profile.updateCategory();

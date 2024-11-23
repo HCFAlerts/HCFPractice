@@ -1,17 +1,9 @@
+#=========================================================#
+#                   Title Configuration                   #
+#=========================================================#
+
 TITLE_TASK: 0.3
 TITLE:
-  - "&d&lS&F&LPACEHCF"
-  - "&d&lSP&f&lACEHCF"
-  - "&d&lSPA&f&lCEHCF"
-  - "&d&lSPAC&f&lEHCF"
-  - "&d&lSPACE&f&lHCF"
-  - "&d&lSPACEH&f&lCF"
-  - "&d&lSPACEHC&f&lF"
-  - "&d&lSPACEHCF"
-  - "&f&lSPACEHCF"
-  - "&d&lSPACEHCF"
-  - "&f&lSPACEHCF"
-  - "&d&lSPACEHCF"
   - "&d&lP&f&lRACTICE"
   - "&d&lPR&f&lACTICE"
   - "&d&lPRA&f&lCTICE"
@@ -24,16 +16,29 @@ TITLE:
   - "&d&lPRACTICE"
   - "&f&lPRACTICE"
   - "&d&lPRACTICE"
+
+#=========================================================#
+#                   Footer Configuration                  #
+#=========================================================#
+
 FOOTER_ENABLED: true
-FOOTER_TASK: 2.0
+FOOTER_TASK: 5.0
 FOOTER:
-  - "&f&ospacehcf.us"
-  - "&f&ostore.spacehcf.us"
-  - "&f&odiscord.spacehcf.us"
+  - "&f&oplay.liteclub.dev"
+  - "&f&ostore.liteclub.dev"
+  - "&f&odsc.gg/liteclubdevelopment"
+
+#=========================================================#
+#                   Bars Configuration                    #
+#=========================================================#
+
 BARS_ENABLED: true
 BARS_FORMAT: "&7&m----------------------"
-# Section of suggestions for you
-#
+
+#=========================================================#
+#                   Lines Configuration                   #
+#=========================================================#
+
 BOARD:
   PARTY:
     - "&7&m----------------------"
@@ -42,7 +47,7 @@ BOARD:
   CLAN:
     - "&7&m----------------------"
     - "&dClan&7: &f{color}{clan}"
-    - "&dOnline&7: &7{size}"
+    - "&dOnline&7: &f{size}"
   FOLLOWING:
     - "&7&m----------------------"
     - "&dFollowing&7: &f{color}{player}"
@@ -64,7 +69,7 @@ BOARD:
     - "&dIn Fights&7: &f{in-fights}"
     - "&dIn Queues&7: &f{in-queue}"
     - "&7&m----------------------"
-    - "&dDivision&7: &7Silver I"
+    - "&dDivision&7: &f{category}"
     - "&dCoins&7: &f0 &e⛃"
     - "{party}"
     - "{clan}"
@@ -80,39 +85,37 @@ BOARD:
       - "&dIn Queues&7: &f{in-queue}"
       - "&7&m----------------------"
       - "&dQueue&7: &f{queue}"
-      - "&7Time Waiting: &f{elapsed}"
+      - "&dTime Waiting: &f{elapsed}"
       - "{ranked}"
       - "{footer}"
   STAFFMODE:
     LOBBY:
       - "&d&lStaff Mode"
-      - " &7* &dPlayers&7: &f{players} &7({staffs})"
-      - " &7* &dIn Fight&7: &f{in-fight}"
-      - " &7* &dTPS&7: &f{tps}"
-      - ""
+      - "&5┃ &dPlayers&7: &f{players} &7({staffs})"
+      - "&5┃ &dIn Fight&7: &f{in-fight}"
+      - "&5┃ &dTPS&7: &f{tps}"
       - "{footer}"
     SPECTATING:
       - "&d&lStaff Mode"
-      - " &7* &dPlayers&7: &f{players} &7({staffs})"
-      - " &7* &dIn Fight&7: &f{in-fight}"
-      - " &7* &dTPS&7: &f{tps}"
+      - "&5┃ &dPlayers&7: &f{players} &7({staffs})"
+      - "&5┃ &dIn Fight&7: &f{in-fight}"
+      - "&5┃ &dTPS&7: &f{tps}"
       - "&7&m----------------------"
       - "&d&lSpectator Mode"
-      - " &7* &dPlayers&7: &f{match-players}"
-      - " &7* &dDuration&7: &f{match-duration}"
-      - " &7* &dState&7: &f{match-state}"
-      - " &7* &dRanked&7: &f{match-ranked}"
-      - ""
+      - "&5┃ &dPlayers&7: &f{match-players}"
+      - "&5┃ &dDuration&7: &f{match-duration}"
+      - "&5┃ &dState&7: &f{match-state}"
+      - "&5┃ &dRanked&7: &f{match-ranked}"
       - "{footer}"
   MATCH:
     ABILITIES:
       - "{ability}&7: &f{cooldown}"
     1V1:
       BOXING_MODE:
-        - "&dHits: &d({hits})"
+        - "&dHits: &f({hits})"
         - "&dYou: &f{your-hits}"
         - "&dThem: &f{opponent-hits}"
-        - "&dCombo: &d{combo}"
+        - "&dCombo: &f{combo}"
         - "&7&m----------------------"
         - "&dYour Ping: &f{player-ping}"
         - "&dTheir Ping: &f{opponent-ping}"
@@ -140,7 +143,7 @@ BOARD:
           - "&8[&9B&8] &9{bGoal}"
           - "&8[&cR&8] &c{rGoal}"
           - "&7&m----------------------"
-          - "&eKills&7: &f{kills}"
+          - "&dKills&7: &f{kills}"
       PARKOUR:
         - "&d&lParkour"
         - "&7&m----------------------"
@@ -317,3 +320,7 @@ BOARD:
       WAITING_FOR_NEXT_ROUND:
         - "&fRound: &d{current-round}#"
         - "&fStatus: &cWaiting..."
+
+#=========================================================#
+#                       The end...                        #
+#=========================================================#

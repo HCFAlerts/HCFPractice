@@ -19,7 +19,7 @@ CONVERSATION:
 JOIN_MESSAGES:
   - '  '
   - ' &7[&a+&7] &fWelcome to &d&lPractice &7[Season 1]'
-  - ' &7[&a+&7] &fFor more information visit&7: &fdiscord.spacehcf.us'
+  - ' &7[&a+&7] &fFor more information visit&7: &fdsc.gg/liteclubdevelopment'
   - '  '
 
 ARENA:
@@ -67,15 +67,15 @@ PARTY:
   CHAT_PREFIX: '&d[Party] &r'
   CONTEXT:
     KICK: been kicked from
-    QUIT: left
+    QUIT: left from
   REQUIRED_ALL_PLAYERS_ON_LOBBY_TO_START: '&cAll player of the party have to be in spawn for you to start another event'
 
 EVENT:
   CANT_HOST: '&cYou cannot host that event.'
   HELP:
     - '&7&m------------------------------------------------'
-    - ''
     - '&d&lEvent Help &7(1/1)'
+    - ''
     - '&f/events &7- &fShow events that can be hosted'
     - '&f/host <type> &7- &fHost an event by name'
     - '&f/event info &7- &fShows active event information'
@@ -175,7 +175,7 @@ MATCH:
   NOW_SPECTATING: '&f{spectator_name} &dis now spectating.'
   NO_LONGER_SPECTATING: '&f{spectator_name} &dis no longer spectating.'
   PLAYING_ARENA_NO_AUTHOR: '&dYou are playing on arena &f{arena_name}&d.'
-  PLAYING_ARENA_AUTHOR: '&dYou are playing on arena &f{arena_name}&d, create by &f&l{author}&d.'
+  PLAYING_ARENA_AUTHOR: '&dYou are playing on arena &f{arena_name}&d.' # {author}
   START_TIMER: '&dThe match starts in &f{time} &dsecond{context}...'
   STARTED: '&dThe match has started.'
   WIN_STREAK_MESSAGE: '&dYou are now on a &f{streak}&d win{context} streak!.'
@@ -205,7 +205,7 @@ MATCH:
   PLAYER_KILLED: '{dead_name} &7was slain by {killer_name}&7.'
   PLAYER_DIED: '{dead_name} &7committed suicide.'
   BRIDGE_SCORED: '{color}{player} scored a point'
-  STARTED_TITLE: '&f&lStarted'
+  STARTED_TITLE: '&a&lGOOD LUCK'
   WINNER_TITLE: '&a&lVICTORY!' #This section only works as a single message line
   WINNER_SUBTITLE: '&a{winner} &fwon the match' #This section only works as a single message line
   LOSER_TITLE: '&c&lDEFEAT!' #This section only works as a single message line
@@ -316,15 +316,28 @@ CLASS:
   ROGUE_CANNOT_USE: '&cYou cannot use this for another &4&l{time}&c.'
 
 TOURNAMENT:
+  HELP:
+    - '&7&m------------------------------------------------'
+    - '&d&lTournament Help &7(1/1)'
+    - ''
+    - '&f/tournament start (kit) (size) (limit) [true/false]'
+    - '&f/tournament forcestart'
+    - '&f/tournament stop'
+    - '&f/tournament join'
+    - '&7&m------------------------------------------------'
   PLAYER_JOIN: '&f{player} &7has join to tournament.'
   PARTY_JOIN: '&7Party of {leader} &7has join to tournament.'
   CLAN_JOIN: '&7Clan &f{color}{clan} &7has join to tournament.'
   ALREADY_CREATED: '&cThere is already an active tournament.'
   STOP: '&cTournament has been stopped.'
   WINNER_MESSAGE:
-    - '{bars}'
-    - '{winner} &f&lhas won Tournament.'
-    - '{bars}'
+    - '&7███████'
+    - '&7██&4███&7██'
+    - '&7███&4█&7███  &r{winner} has won'
+    - '&7███&4█&7███  &rthe tournament!'
+    - '&7███&4█&7███  &r&f&lGood game!'
+    - '&7███&4█&7███'
+    - '&7███████'
   ELIMINATE_PLAYER: '&7{players} &dhas been eliminated.'
   ELIMINATE_TEAM: '&dThe team of &7{team} &dhas been eliminated.'
   ELIMINATE_CLAN: '&dClan &f{color}{clan} &dhas been eliminated.'
