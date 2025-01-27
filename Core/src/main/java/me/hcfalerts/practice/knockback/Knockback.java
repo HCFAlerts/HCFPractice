@@ -54,10 +54,11 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fFoxSpigot has been successfully hooked"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fFoxSpigot is not fully recommended for HCFPractice"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fFoxSpigot not contain the best performance for +30 players"));
-                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot or HCFSpigot, thanks."));
+                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot for best performance, thanks."));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 break;
             case "CarbonSpigot":
+            case "Retention-Carbon":
                 knockbackProfiler = new Default();
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 Bukkit.getConsoleSender().sendMessage(translate("             &4&lHCFPRACTICE &8- &7Spigot Hook"));
@@ -76,7 +77,7 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVSpigot has been successfully hooked"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVSpigot is not fully recommended for HCFPractice"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVSpigot and VortexSpigot contain bad Knockback, not Smooth"));
-                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot or HCFSpigot, thanks."));
+                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot for smooth Knockback, thanks."));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 break;
             case "VortexSpigot":
@@ -87,7 +88,7 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVortexSpigot has been successfully hooked"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVortexSpigot is not fully recommended for HCFPractice"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fVortexSpigot and VSpigot contain bad Knockback, not Smooth"));
-                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot or HCFSpigot, thanks."));
+                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot for smooth Knockback, thanks."));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 break;
             case "InsanePaper":
@@ -98,7 +99,7 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fInsanePaperSpigot has been successfully hooked"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fInsanePaperSpigot is not fully recommended for HCFPractice"));
                 Bukkit.getConsoleSender().sendMessage(translate("&a● &fInsanePaperSpigot is based-on default Paper spigot, default KB"));
-                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot or HCFSpigot, thanks."));
+                Bukkit.getConsoleSender().sendMessage(translate("&a● &fHCFPractice recommend use CarbonSpigot for smooth Knockback, thanks."));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 break;
             case "1.7.10":
@@ -106,14 +107,10 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
                 Bukkit.getConsoleSender().sendMessage(translate("             &4&lHCFPRACTICE &8- &7Spigot Hook"));
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &cYou don't have a spigot compatible with HCFPractice Knockback..."));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &cAnd you are using 1.7.10 Spigot, &LNOT RECOMMENDED&7"));
+                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &cAnd you are using 1.7.10 Spigot, &lNOT RECOMMENDED&7"));
                 Bukkit.getConsoleSender().sendMessage(translate(""));
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &aCompatible Spigots *&lRECOMMENDED&c*"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &a*&lFoxSpigot&a*, *&lCarbonSpigot&a*, VSpigot, VortexSpigot and *&lHCFSpigot&a*"));
-                Bukkit.getConsoleSender().sendMessage(translate(""));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7HCFSpigot is the Best PotPvP Spigot in the Market"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7And the Best Spigot for HCFPractice :')"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7Get HCFSpigot for Free on &ndsc.gg/flameclubdevelopment&7"));
+                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &a*&lFoxSpigot&a*, *&lCarbonSpigot&a*, VSpigot and VortexSpigot"));
                 Bukkit.getConsoleSender().sendMessage(translate(""));
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7Using Default &l1.7&7 Knockback System &l[Not Recommended for Smooth KB]&7"));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
@@ -126,11 +123,7 @@ public class Knockback {
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &cHCFPractice don't recommend use 1.7 spigots [NitroSpigot, PandaSpigot]"));
                 Bukkit.getConsoleSender().sendMessage(translate(""));
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &aCompatible Spigots *&lRECOMMENDED&a*"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &a*&lFoxSpigot&a*, *&lCarbonSpigot&a*, VSpigot, VortexSpigot and *&lHCFSpigot&a*"));
-                Bukkit.getConsoleSender().sendMessage(translate(""));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7HCFSpigot is the Best Free PotPvP Spigot in the Market"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7And the Best Spigot for HCFPractice :')"));
-                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7Get HCFSpigot for Free on &ndsc.gg/flameclubdevelopment&7"));
+                Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &a*&lFoxSpigot&a*, *&lCarbonSpigot&a*, VSpigot and VortexSpigot"));
                 Bukkit.getConsoleSender().sendMessage(translate(""));
                 Bukkit.getConsoleSender().sendMessage(translate("&7[&c!&7] &7Using Default Knockback System &l[Not Recommended for Smooth KB]&7"));
                 Bukkit.getConsoleSender().sendMessage(CHAT_BAR);

@@ -1,3 +1,7 @@
+#HEADS: {player}, {discord}, {twitter}, {chest}, {clock}, {ping}, {tv}, {dirt}, {dark_gray}.
+#DOTS: {dark_gray_dot}, {green}, {blue}, {dark_blue}, {dark_aqua}, {purple}, {pink}, {gray},
+#{red}, {yellow}, {dark_green}, {dark_red}, {gold}, {aqua}, {white}, {dark_gray}, {black}.
+
 TABLIST:
   LEFT:
     '1':
@@ -23,13 +27,13 @@ TABLIST:
       head: ''
     '8':
       text: '&d&lIn Queue&7: &f{inqueue}'
-      head: ''
+      head: '{pink}'
     '9':
       text: '&d&lIn Fight&7: &f{infight}'
-      head: ''
+      head: '{pink}'
     '10':
       text: '&d&lEvent&7: {event}'
-      head: ''
+      head: '{pink}'
     '11':
       text: ''
       head: ''
@@ -53,7 +57,7 @@ TABLIST:
       head: ''
     '18':
       text: '&d&lDiscord'
-      head: ''
+      head: '{discord}'
     '19':
       text: '&7dsc.gg/liteclubdevelopment'
       head: ''
@@ -66,7 +70,7 @@ TABLIST:
       head: ''
     '2':
       text: '&d&lPractice'
-      head: ''
+      head: '{ping}'
     '3':
       text: '&7{online}/{slots}'
       head: ''
@@ -114,7 +118,7 @@ TABLIST:
       head: ''
     '18':
       text: '&d&lTwitter'
-      head: ''
+      head: '{twitter}'
     '19':
       text: '&7@LiteClubDEV'
       head: ''
@@ -133,37 +137,37 @@ TABLIST:
       head: ''
     '4':
       text: '&d&lGlobal Elo&7: &f{globalelo}'
-      head: ''
+      head: '{pink}'
     '5':
       text: '&d&lNoDebuff&7: &f{nodebuff_elo}'
-      head: ''
+      head: '{pink}'
     '6':
       text: '&d&lDebuff&7: &f{debuff_elo}'
-      head: ''
+      head: '{pink}'
     '7':
       text: '&d&lBuildUHC&7: &f{builduhc_elo}'
-      head: ''
+      head: '{pink}'
     '8':
       text: '&d&lSkyWars&7: &f{skywars_elo}'
-      head: ''
+      head: '{pink}'
     '9':
       text: '&d&lGapple&7: &f{gapple_elo}'
-      head: ''
+      head: '{pink}'
     '10':
       text: '&d&lHCF&7: &f{hcf_elo}'
-      head: ''
+      head: '{pink}'
     '11':
       text: '&d&lSumoFly&7: &f{sumofly_elo}'
-      head: ''
+      head: '{pink}'
     '12':
       text: '&d&lSumo&7: &f{sumo_elo}'
-      head: ''
+      head: '{pink}'
     '13':
       text: '&d&lCombo&7: &f{combo_elo}'
-      head: ''
+      head: '{pink}'
     '14':
       text: '&d&lBridge&7: &f{bridge_elo}'
-      head: ''
+      head: '{pink}'
     '15':
       text: ''
       head: ''
@@ -174,10 +178,10 @@ TABLIST:
       text: ''
       head: ''
     '18':
-      text: '&d&lTeamSpeak'
-      head: ''
+      text: '&d&lStore'
+      head: '{chest}'
     '19':
-      text: '&7ts.liteclub.dev'
+      text: '&7store.liteclub.dev'
       head: ''
     '20':
       text: ''

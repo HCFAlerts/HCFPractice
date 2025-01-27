@@ -232,7 +232,7 @@ BOARD:
     1V1:
       BOXING_MODE:
         - "&d&lSpectating"
-        - "&d{st-player} &7vs &c{nd-player}"
+        - "&a{st-player} &7vs &c{nd-player}"
         - "&7&m----------------------"
         - "&d{st-player}: &d{st-hits}"
         - " &c{nd-player}: &c{nd-hits}"
@@ -241,12 +241,12 @@ BOARD:
       HCF:
         LINES:
           - "&d&lSpectating"
-          - "&fFighting: {fighting}"
+          - "&fa{st-player} &fvs &c{nd-player}"
           - "&fDuration: &c{duration}"
       HCF_TRAP:
         LINES:
           - "&d&lSpectating"
-          - "&fFighting: {fighting}"
+          - "&fa{st-player} &fvs &c{nd-player}"
           - "&fDuration: &c{duration}"
       BRIDGE:
         GOAL: "●"
@@ -260,10 +260,10 @@ BOARD:
           - "  &9{st-ping}ms &7| &c{nd-ping}ms"
       PARKOUR:
         - "&d&lParkour"
-        - "&d{st-player} &fvs &c{nd-player}"
+        - "&a{st-player} &fvs &c{nd-player}"
       DEFAULT:
         - "&d&lSpectating"
-        - "&fFighting: {fighting}"
+        - "&fa{st-player} &fvs &c{nd-player}"
         - "&fDuration: &c{duration}"
       MATCH_END:
         - "&c&lMatch Ended"
@@ -275,15 +275,12 @@ BOARD:
     MASS_FIGHT:
       BOXING_MODE:
         - "&d&lSpectating"
-        - "&fFighting: {fighting}"
         - "&fDuration: &c{duration}"
       HCF:
         - "&d&lSpectating"
-        - "&fFighting: {fighting}"
         - "&fDuration: &c{duration}"
       HCF_TRAP:
         - "&d&lSpectating"
-        - "&fFighting: &d{fighting}"
         - "&fDuration: &c{duration}"
       BRIDGE:
         GOAL: "●"
@@ -295,7 +292,6 @@ BOARD:
       PARKOUR:
         - "&d&lParkour"
         - "&7&m----------------------"
-        - "&fFighting: &c{fighting}"
         - "&fTime Elapsed: &d{duration}"
       DEFAULT:
         - "&d&lSpectating"
@@ -312,7 +308,6 @@ BOARD:
     FFA:
       DEFAULT:
         - "&d&lSpectating"
-        - "&fFighting: {fighting}"
         - "&fDuration: &c{duration}"
       MATCH_END:
         - "&c&lMatch Ended"

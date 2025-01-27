@@ -1,5 +1,6 @@
 package me.hcfalerts.practice.utilities.chat;
 
+import lombok.Getter;
 import me.hcfalerts.practice.HCFPractice;
 import me.hcfalerts.practice.arena.Arena;
 import me.hcfalerts.practice.clan.Clan;
@@ -9,6 +10,7 @@ import me.hcfalerts.practice.utilities.file.languaje.Lang;
 import me.hcfalerts.practice.utilities.license.License;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.plugin.Plugin;
 
 import java.util.*;
 
@@ -42,6 +44,13 @@ public class CC {
     public static final String CHAT_BAR;
     public static final String SB_BAR;
     public static final String TAB_BAR;
+
+    @Getter
+    private static boolean pandaAbilityFound = false;
+    @Getter
+    private static boolean placeholderAPIFound = false;
+    @Getter
+    private static boolean lunarclientAPIFound = false;
 
     static {
         MAP = new HashMap<>();
@@ -155,7 +164,7 @@ public class CC {
         Bukkit.getConsoleSender().sendMessage(translate("&cInvalid License."));
         Bukkit.getConsoleSender().sendMessage(translate(" "));
         Bukkit.getConsoleSender().sendMessage(translate("&cJoin our discord server for support."));
-        Bukkit.getConsoleSender().sendMessage(translate("&chttps://dsc.gg/flameclubdevelopment"));
+        Bukkit.getConsoleSender().sendMessage(translate("&chttps://dsc.gg/liteclubdevelopment"));
         Bukkit.getConsoleSender().sendMessage(translate(" "));
         Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
     }
@@ -167,12 +176,12 @@ public class CC {
         Bukkit.getConsoleSender().sendMessage(translate("&aSuccessfully loaded license."));
         Bukkit.getConsoleSender().sendMessage(translate(" "));
         Bukkit.getConsoleSender().sendMessage(translate("&7&oThank you for using HCFPractice."));
-        Bukkit.getConsoleSender().sendMessage(translate("&7&ohttps://dsc.gg/flameclubdevelopment"));
+        Bukkit.getConsoleSender().sendMessage(translate("&7&ohttps://dsc.gg/liteclubdevelopment"));
         Bukkit.getConsoleSender().sendMessage(CHAT_BAR);
     }
 
     public static void successfullyLicense() {
-        Bukkit.getConsoleSender().sendMessage(translate("&7[HCFPractice&7] &aSearching Compatible Spigot..."));
+        Bukkit.getConsoleSender().sendMessage(translate("&7[HCFPractice&7] &aSearching Compatible Spigot and Rank Core..."));
     }
 
     public static void loadPlugin() {
@@ -186,9 +195,28 @@ public class CC {
         Bukkit.getConsoleSender().sendMessage(translate("&cRank System&7: &f" + HCFPractice.get().getRankManager().getRank().getRankSystem()));
         Bukkit.getConsoleSender().sendMessage(translate(""));
         Bukkit.getConsoleSender().sendMessage(translate("&4Addons Info"));
-        Bukkit.getConsoleSender().sendMessage(translate("&cLunarClientAPI&7: &aEnabled"));
-        Bukkit.getConsoleSender().sendMessage(translate("&cPlaceholderAPI&7: &aEnabled"));
-        Bukkit.getConsoleSender().sendMessage(translate("&cHCFPractice-Bots&7: &4Disabled"));
+        Plugin lunarclientAPI = Bukkit.getPluginManager().getPlugin("LunarClient-API");
+        if (lunarclientAPI != null) {
+            lunarclientAPIFound = true;
+            Bukkit.getConsoleSender().sendMessage(translate("&cLunarClientAPI&7: &aEnabled"));
+        } else {
+            Bukkit.getConsoleSender().sendMessage(translate("&cLunarClientAPI&7: &4Disabled"));
+        }
+        Plugin placeholderAPI = Bukkit.getPluginManager().getPlugin("PlaceholderAPI");
+        if (placeholderAPI != null) {
+            placeholderAPIFound = true;
+            Bukkit.getConsoleSender().sendMessage(translate("&cPlaceholderAPI&7: &aEnabled"));
+        } else {
+            Bukkit.getConsoleSender().sendMessage(translate("&cPlaceholderAPI&7: &4Disabled"));
+        }
+        Bukkit.getConsoleSender().sendMessage(translate("&cBotFights&7: &4Disabled"));
+        Plugin pandaAbility = Bukkit.getPluginManager().getPlugin("PandaAbility");
+        if (pandaAbility != null) {
+            pandaAbilityFound = true;
+            Bukkit.getConsoleSender().sendMessage(translate("&cPandaAbility&7: &aEnabled"));
+        } else {
+            Bukkit.getConsoleSender().sendMessage(translate("&cPandaAbility&7: &4Disabled"));
+        }
         Bukkit.getConsoleSender().sendMessage(translate(""));
         Bukkit.getConsoleSender().sendMessage(translate("&4General Info"));
         Bukkit.getConsoleSender().sendMessage(translate("&cSave Method&7: &f" + HCFPractice.get().getMainConfig()

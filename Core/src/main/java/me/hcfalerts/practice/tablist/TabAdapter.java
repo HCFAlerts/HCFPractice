@@ -463,6 +463,12 @@ public class TabAdapter implements GhostlyAdapter {
             case "{player}": skin = TabListCommons.getSkinData(player.getUniqueId()); break;
             case "{discord}": skin = TabListCommons.DISCORD_TEXTURE; break;
             case "{twitter}": skin = TabListCommons.TWITTER_TEXTURE; break;
+            case "{chest}": skin = TabListCommons.CHEST_TEXTURE; break;
+            case "{clock}": skin = TabListCommons.CLOCK_TEXTURE; break;
+            case "{ping}": skin = TabListCommons.PING_TEXTURE; break;
+            case "{tv}": skin = TabListCommons.TV_TEXTURE; break;
+            case "{dirt}": skin = TabListCommons.DIRT_TEXTURE; break;
+            case "{dark_gray_dot}": skin = TabListCommons.DARK_GRAY_DOT; break;
             case "{green}": skin = TabListCommons.GREEN_DOT; break;
             case "{blue}": skin = TabListCommons.BLUE_DOT; break;
             case "{dark_blue}": skin = TabListCommons.DARK_BLUE_DOT; break;

@@ -82,7 +82,7 @@ public class PartyEventSelectEventMenu extends Menu {
 			return new ItemBuilder(Material.DIAMOND_CHESTPLATE)
 					.name(config.getString("PARTY.HCFTEAMFIGHT.NAME")
 							.replace("{name}", partyEvent.getName()))
-				.lore(lore)
+				    .lore(lore)
 					.build();
 
 		}

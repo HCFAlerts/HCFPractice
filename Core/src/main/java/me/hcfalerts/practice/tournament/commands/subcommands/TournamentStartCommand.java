@@ -33,6 +33,12 @@ public class TournamentStartCommand extends BaseCommand {
 
         if (args.length < 3) {
             player.sendMessage(CC.RED + "Please usage /tournament start (kit) (size) (limit) (true/false) [clans]");
+            player.sendMessage(CC.RED + " » Size: min players in team (if 1 the tournament starts in solo mode)");
+            player.sendMessage(CC.RED + "  » /tournament start NoDebuff '2' 100 false");
+            player.sendMessage(CC.RED + " » Limit: max players/teams in the tournament");
+            player.sendMessage(CC.RED + "  » /tournament start NoDebuff 2 '100' false");
+            player.sendMessage(CC.RED + " » Clan: if min players is 2 or more with true, the tournament starts only for clans");
+            player.sendMessage(CC.RED + "  » /tournament start NoDebuff 2 100 'true'");
             return;
         }
 

@@ -320,7 +320,7 @@ TOURNAMENT:
     - '&7&m------------------------------------------------'
     - '&d&lTournament Help &7(1/1)'
     - ''
-    - '&f/tournament start (kit) (size) (limit) [true/false]'
+    - '&f/tournament start <kit> <size> <limit> <true|false>'
     - '&f/tournament forcestart'
     - '&f/tournament stop'
     - '&f/tournament join'
@@ -364,7 +364,7 @@ TOURNAMENT:
 
 STAFF_MODE:
   NO_PLAYERS_SPEC: '&cNo players to spectating.'
-  NOW_SHOW_ALL_PLAYERS: '&fNow show all Players'
+  NOW_SHOW_ALL_PLAYERS: '&fNow show all online players'
   NOW_IN_SPAWN: '&cYou back in the Spawn'
   JOIN_STAFF: '&aJoin Staff Mode'
   LEAVE_STAFF: '&cLeave Staff Mode'

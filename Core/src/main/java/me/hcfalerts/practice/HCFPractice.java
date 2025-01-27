@@ -190,6 +190,7 @@ public class HCFPractice extends JavaPlugin {
         if (mainConfig.getBoolean("MATCH.ENABLE_LUNAR_THINGS")) {
             if (getServer().getPluginManager().getPlugin("LunarClient-API") != null) {
                 lunarClient = true;
+                System.out.println("[HCFPractice] LunarClientAPI Implementation successfully registered");
             } else {
                 System.out.println("[HCFPractice] LunarClientAPI is not installed!");
             }

@@ -33,9 +33,9 @@ public class ArenaCommand extends BaseCommand {
         sender.sendMessage(CC.CHAT_BAR);
         sender.sendMessage(CC.translate("&d&lArena Help &7(1/1)"));
         sender.sendMessage(CC.translate(""));
-        sender.sendMessage(CC.translate("&a● &7Needed to setup Arena"));
-        sender.sendMessage(CC.translate("&6● &7Recommended to setup Arena"));
-        sender.sendMessage(CC.translate("&c● &7Not Needed to setup Arena"));
+        sender.sendMessage(CC.translate("&a● &fNeeded to setup Arena"));
+        sender.sendMessage(CC.translate("&6● &fRecommended to setup Arena"));
+        sender.sendMessage(CC.translate("&c● &fNot Needed to setup Arena"));
         sender.sendMessage(CC.translate(""));
         sender.sendMessage(CC.translate("&a● &f/arena wand"));
         sender.sendMessage(CC.translate("&a● &f/arena create <arena_name> <SHARED/STANDALONE>"));

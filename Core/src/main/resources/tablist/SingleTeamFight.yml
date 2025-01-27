@@ -1,3 +1,7 @@
+#HEADS: {player}, {discord}, {twitter}, {chest}, {clock}, {ping}, {tv}, {dirt}, {dark_gray}.
+#DOTS: {dark_gray_dot}, {green}, {blue}, {dark_blue}, {dark_aqua}, {purple}, {pink}, {gray},
+#{red}, {yellow}, {dark_green}, {dark_red}, {gold}, {aqua}, {white}, {dark_gray}, {black}.
+
 TABLIST:
   LEFT:
     '1':
