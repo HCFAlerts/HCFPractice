@@ -20,7 +20,7 @@
 ## TODO
 - [X] Fix BaseCommand
 - [ ] Fix KitEditorSelectKitMenu and KitManagementMenu
-- [ ] Improve the Party Events Menus
+- [X] Improve the Party Events Menus
 - [ ] Improve the HCF-TeamFight System
 
 ---
