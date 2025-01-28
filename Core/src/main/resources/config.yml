@@ -78,7 +78,8 @@ STATS_MENU:
     - "{bars}"
 ELO:
   CATEGORY_ENABLE: true
-  CATEGORIES: # Use this format: "name:needed_elo:display_name", name without spaces
+  # Use this format: "name:needed_elo:display_name", name without spaces
+  CATEGORIES:
     - "Silver5:500:&7Silver V"
     - "Silver4:1000:&7Silver IV"
     - "Silver3:1015:&7Silver III"
